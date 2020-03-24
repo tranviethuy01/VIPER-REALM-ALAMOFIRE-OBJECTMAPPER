@@ -15,9 +15,6 @@ class RealmDishDetailLocalDataManager:  RealmDishDetailLocalDataManagerProtocol 
         //do sth here
         let realm = try! Realm()
         return realm.object(ofType: RealmDishModel.self, forPrimaryKey: id)
-                //trả về phần tử đầu tiên
-        //        return realm.objects(RealmDishModel.self).filter("code = %@", id).first
-        //return nil
     }
     
 

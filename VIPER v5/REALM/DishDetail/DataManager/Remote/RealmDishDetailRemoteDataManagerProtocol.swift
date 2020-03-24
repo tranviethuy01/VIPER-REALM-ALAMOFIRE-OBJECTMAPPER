@@ -24,8 +24,6 @@ protocol RealmDishDetailRemoteDataManagerOutputProtocol: class {
         //
         func reloadDishListSuccess()
         func reloadDishListFail()
-        //func reloadSuccess()
-        //func reloadFail()
         func loadMoreSuccess()
         func loadMoreFail()
         

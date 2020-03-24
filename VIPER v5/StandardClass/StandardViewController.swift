@@ -16,10 +16,5 @@ class StandardViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    /*
-    class func initWithStoryBoard() -> ViewController?{
-        return ViewService.viewController(storyBoardId(), storyboardName: storyBoardName()) as? ViewController
-    }
-    */
 
 }

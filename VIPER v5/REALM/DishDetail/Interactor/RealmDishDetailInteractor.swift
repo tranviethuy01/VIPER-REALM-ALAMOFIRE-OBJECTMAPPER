@@ -37,15 +37,14 @@ class RealmDishDetailInteractor: RealmDishDetailInteractorInputProtocol {
     
     func registerChange(dishDetail: RealmDishModel) {
         //code
-        print("GKDEBUG >> RealmDishDetailInteractor >> registerChange ")
+//        print("GKDEBUG >> RealmDishDetailInteractor >> registerChange ")
                 
             //register change
         dishDetailNotificationToken = dishDetail.observe({  [weak self] (change) in
                     
                     print("GKDEBUG >> registerChange >> dishList.observe >> changes")
                     if let weakSelf = self, let presenter = weakSelf.presenter {
-        //                presenter.didReceiveChange(campaignListChange: changes)
-                        print("GKDEBUG >> registerChange >> dishList.observe >> changes >> tiến hành gọi presenter thực hiện update view")
+       
                         presenter.didReceiveChange(dishDetailChange: change)
                     }
                 })

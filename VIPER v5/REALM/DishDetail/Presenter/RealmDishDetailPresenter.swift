@@ -66,7 +66,7 @@ extension RealmDishDetailPresenter : RealmDishDetailInteractorOutputProtocol {
         
         if let interactor = interactor {
             
-            print ("GKDEBUG >> Tiến hành interactor.registerChange ")
+           // print ("GKDEBUG >> Tiến hành interactor.registerChange ")
             
             interactor.registerChange(dishDetail: self.dish)
         }
@@ -81,7 +81,6 @@ extension RealmDishDetailPresenter : RealmDishDetailInteractorOutputProtocol {
     func didReceiveChange(dishDetailChange: RealmDishModel) {
         //do sth
     }
-    
     
     
 
