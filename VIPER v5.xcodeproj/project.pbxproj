@@ -3,10 +3,86 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D27CEB52424A78C003B1129 /* RealmDishListLocalDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D27CEB42424A78C003B1129 /* RealmDishListLocalDataManagerProtocol.swift */; };
+		0D27CEB72424A79E003B1129 /* RealmDishListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D27CEB62424A79E003B1129 /* RealmDishListLocalDataManager.swift */; };
+		0D27CEB92424A7EE003B1129 /* RealmDishListRemoteDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D27CEB82424A7EE003B1129 /* RealmDishListRemoteDataManagerProtocol.swift */; };
+		0D27CEBB2424A7FE003B1129 /* RealmDishListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D27CEBA2424A7FE003B1129 /* RealmDishListRemoteDataManager.swift */; };
+		0D457D9B2424683100762A0E /* RealmDishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457D9A2424683100762A0E /* RealmDishDetailViewController.swift */; };
+		0D457D9D2424684500762A0E /* RealmDishDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457D9C2424684500762A0E /* RealmDishDetailPresenter.swift */; };
+		0D457D9F2424685000762A0E /* RealmDishDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457D9E2424685000762A0E /* RealmDishDetailPresenterProtocol.swift */; };
+		0D457DA12424686400762A0E /* RealmDishDetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DA02424686400762A0E /* RealmDishDetailViewControllerProtocol.swift */; };
+		0D457DA32424687500762A0E /* RealmDishDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DA22424687500762A0E /* RealmDishDetailInteractor.swift */; };
+		0D457DA52424688300762A0E /* RealmDishDetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DA42424688300762A0E /* RealmDishDetailInteractorProtocol.swift */; };
+		0D457DA72424689A00762A0E /* RealmDishDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DA62424689A00762A0E /* RealmDishDetailWireFrame.swift */; };
+		0D457DAA242468AA00762A0E /* RealmDishDetailWireFrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DA9242468AA00762A0E /* RealmDishDetailWireFrameProtocol.swift */; };
+		0D457DAC242468D200762A0E /* RealmDishDetailConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DAB242468D200762A0E /* RealmDishDetailConfig.swift */; };
+		0D457DAE242468E900762A0E /* RealmDishDetailRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DAD242468E900762A0E /* RealmDishDetailRemoteDataManager.swift */; };
+		0D457DB0242468F600762A0E /* RealmDishDetailRemoteDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DAF242468F600762A0E /* RealmDishDetailRemoteDataManagerProtocol.swift */; };
+		0D457DB22424690600762A0E /* RealmDishDetailLocalDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DB12424690600762A0E /* RealmDishDetailLocalDataManagerProtocol.swift */; };
+		0D457DB42424691300762A0E /* RealmDishDetailLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DB32424691300762A0E /* RealmDishDetailLocalDataManager.swift */; };
+		0D457DB624246F7400762A0E /* AlamofireDishListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DB524246F7400762A0E /* AlamofireDishListPresenter.swift */; };
+		0D457DB824246F9000762A0E /* AlamofireDishListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DB724246F9000762A0E /* AlamofireDishListPresenterProtocol.swift */; };
+		0D457DBA24246FBE00762A0E /* AlamofireDishListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DB924246FBE00762A0E /* AlamofireDishListInteractor.swift */; };
+		0D457DBC24246FC900762A0E /* AlamofireDishListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DBB24246FC900762A0E /* AlamofireDishListInteractorProtocol.swift */; };
+		0D457DBE24246FDF00762A0E /* AlamofireDishListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DBD24246FDF00762A0E /* AlamofireDishListWireFrame.swift */; };
+		0D457DC024246FEB00762A0E /* AlamofireDishListWireFrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DBF24246FEB00762A0E /* AlamofireDishListWireFrameProtocol.swift */; };
+		0D457DC22424700400762A0E /* AlamofireDishListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DC12424700400762A0E /* AlamofireDishListRemoteDataManager.swift */; };
+		0D457DC42424701300762A0E /* AlamofireDishListRemoteDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DC32424701300762A0E /* AlamofireDishListRemoteDataManagerProtocol.swift */; };
+		0D457DC62424702400762A0E /* AlamofireDishListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DC52424702400762A0E /* AlamofireDishListLocalDataManager.swift */; };
+		0D457DC82424703100762A0E /* AlamofireDishListLocalDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D457DC72424703100762A0E /* AlamofireDishListLocalDataManagerProtocol.swift */; };
+		0D4C11F024232B5900595FD6 /* ViperDishDetailConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4C11EF24232B5900595FD6 /* ViperDishDetailConfig.swift */; };
+		0D9D2D3C2423A9E000DF7F4E /* DishListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D3B2423A9E000DF7F4E /* DishListConfig.swift */; };
+		0D9D2D3E2423AD2300DF7F4E /* RealmDishListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D3D2423AD2300DF7F4E /* RealmDishListConfig.swift */; };
+		0D9D2D402423AD8200DF7F4E /* RealmDishListViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D3F2423AD8200DF7F4E /* RealmDishListViewControllerProtocol.swift */; };
+		0D9D2D422423AD9700DF7F4E /* RealmDishListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D412423AD9700DF7F4E /* RealmDishListCell.swift */; };
+		0D9D2D442423ADB100DF7F4E /* RealmDishListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D432423ADB100DF7F4E /* RealmDishListPresenter.swift */; };
+		0D9D2D462423ADC000DF7F4E /* RealmDishListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D452423ADC000DF7F4E /* RealmDishListPresenterProtocol.swift */; };
+		0D9D2D482423ADD100DF7F4E /* RealmDishListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D472423ADD100DF7F4E /* RealmDishListInteractor.swift */; };
+		0D9D2D4A2423ADE100DF7F4E /* RealmDishListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D492423ADE100DF7F4E /* RealmDishListInteractorProtocol.swift */; };
+		0D9D2D4C2423ADF400DF7F4E /* RealmDishListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D4B2423ADF400DF7F4E /* RealmDishListWireFrame.swift */; };
+		0D9D2D4E2423AE0200DF7F4E /* RealmDishListWireFrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D4D2423AE0200DF7F4E /* RealmDishListWireFrameProtocol.swift */; };
+		0D9D2D502423AFD700DF7F4E /* RealmDishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D4F2423AFD700DF7F4E /* RealmDishModel.swift */; };
+		0D9D2D522423B6DA00DF7F4E /* AutoLayoutDishListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D512423B6DA00DF7F4E /* AutoLayoutDishListConfig.swift */; };
+		0D9D2D542423B75F00DF7F4E /* ObjectMapperDishListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D532423B75F00DF7F4E /* ObjectMapperDishListConfig.swift */; };
+		0D9D2D562423B80E00DF7F4E /* AlarmofireDishListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9D2D552423B80E00DF7F4E /* AlarmofireDishListConfig.swift */; };
+		0DAECEC52425D5BA00951949 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DAECEC42425D5BA00951949 /* Realm.swift */; };
+		0DCD9D8C24231FB10053893A /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD9D8B24231FB10053893A /* DishDetailViewController.swift */; };
+		0DCD9D8E24231FC30053893A /* DishDetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD9D8D24231FC30053893A /* DishDetailViewControllerProtocol.swift */; };
+		0DCD9D9024231FDC0053893A /* DishDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCD9D8F24231FDC0053893A /* DishDetail.storyboard */; };
+		0DCD9D92242320F60053893A /* DishDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD9D91242320F60053893A /* DishDetailPresenter.swift */; };
+		0DCD9D94242321030053893A /* DishDetailPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD9D93242321030053893A /* DishDetailPresenterProtocol.swift */; };
+		0DCD9D962423211D0053893A /* DishDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD9D952423211D0053893A /* DishDetailInteractor.swift */; };
+		0DCD9D982423212F0053893A /* DishDetailInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD9D972423212F0053893A /* DishDetailInteractorProtocol.swift */; };
+		0DCD9D9A242321430053893A /* DishDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD9D99242321430053893A /* DishDetailWireFrame.swift */; };
+		0DCD9D9C242321500053893A /* DishDetailWireFrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCD9D9B242321500053893A /* DishDetailWireFrameProtocol.swift */; };
+		0DD879B42421BE5A0063925B /* RealmDishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD879B32421BE5A0063925B /* RealmDishListViewController.swift */; };
+		0DD879B62421C2FE0063925B /* ViperDishListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD879B52421C2FE0063925B /* ViperDishListStoryboard.storyboard */; };
+		0DD879B82421CB5F0063925B /* AlamofireDishListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD879B72421CB5F0063925B /* AlamofireDishListStoryboard.storyboard */; };
+		0DD879BA2421CB920063925B /* AlamofireDishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD879B92421CB920063925B /* AlamofireDishListViewController.swift */; };
+		0DD879C42421CED50063925B /* ObjectMapperDishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD879C32421CED50063925B /* ObjectMapperDishListViewController.swift */; };
+		0DD879C62421CEE80063925B /* ObjectMapperDishListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD879C52421CEE80063925B /* ObjectMapperDishListStoryboard.storyboard */; };
+		0DD879D02421DE200063925B /* AutoLayoutDishListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD879CF2421DE200063925B /* AutoLayoutDishListStoryboard.storyboard */; };
+		0DD879D22421DE2B0063925B /* AutoLayoutDishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD879D12421DE2B0063925B /* AutoLayoutDishListViewController.swift */; };
+		0DDF035024285F380054BEDF /* ObjectMapperDish2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF034F24285F380054BEDF /* ObjectMapperDish2.swift */; };
+		0DDF035224286E190054BEDF /* RealmDishModel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF035124286E190054BEDF /* RealmDishModel2.swift */; };
+		0DDF03552428795B0054BEDF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF03542428795B0054BEDF /* Constant.swift */; };
+		0DDF0357242879C30054BEDF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF0356242879C30054BEDF /* Config.swift */; };
+		0DDF03592428A1300054BEDF /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF03582428A1300054BEDF /* UIScrollView.swift */; };
+		0DEE25EC24274FC60065939B /* ObjectMapperDishListRemoteDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE25EB24274FC60065939B /* ObjectMapperDishListRemoteDataManagerProtocol.swift */; };
+		0DEE25EE24274FD10065939B /* ObjectMapperDishListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE25ED24274FD10065939B /* ObjectMapperDishListRemoteDataManager.swift */; };
+		0DEE25F024275A040065939B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE25EF24275A040065939B /* String.swift */; };
+		0DEE25F224276E4E0065939B /* BaseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE25F124276E4E0065939B /* BaseObject.swift */; };
+		0DEE25F424279D610065939B /* ObjectMapperDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE25F324279D610065939B /* ObjectMapperDish.swift */; };
+		0DFA20B4242624B20081CBF0 /* ObjectMapperDishModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA20B3242624B10081CBF0 /* ObjectMapperDishModel.swift */; };
+		0DFC28D52429E60D00A92EA9 /* DishListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC28D42429E60D00A92EA9 /* DishListLocalDataManager.swift */; };
+		0DFC28D72429E62000A92EA9 /* DishListLocalDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC28D62429E62000A92EA9 /* DishListLocalDataManagerProtocol.swift */; };
+		24C5FAFBA65A36DE4FA2A160 /* Pods_VIPER_v5Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0589F98E6107C9611F954C31 /* Pods_VIPER_v5Tests.framework */; };
+		26C8424C023CD5C95229F9F6 /* Pods_VIPER_v5_VIPER_v5UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06274B43766F34AF156EDF8 /* Pods_VIPER_v5_VIPER_v5UITests.framework */; };
+		2FC356E3BC7895D7C4A99479 /* Pods_VIPER_v5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEB775A973A6C663F9E647B /* Pods_VIPER_v5.framework */; };
 		841E9D39241C74A800225EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D38241C74A800225EBC /* AppDelegate.swift */; };
 		841E9D3B241C74A800225EBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D3A241C74A800225EBC /* ViewController.swift */; };
 		841E9D3E241C74A800225EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841E9D3C241C74A800225EBC /* Main.storyboard */; };
@@ -15,6 +91,19 @@
 		841E9D46241C74AB00225EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841E9D44241C74AB00225EBC /* LaunchScreen.storyboard */; };
 		841E9D51241C74AB00225EBC /* VIPER_v5Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D50241C74AB00225EBC /* VIPER_v5Tests.swift */; };
 		841E9D5C241C74AC00225EBC /* VIPER_v5UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D5B241C74AC00225EBC /* VIPER_v5UITests.swift */; };
+		841E9D74241C7F7100225EBC /* DishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D73241C7F7100225EBC /* DishListViewController.swift */; };
+		841E9D76241C7F8700225EBC /* DishListViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D75241C7F8700225EBC /* DishListViewControllerProtocol.swift */; };
+		841E9D78241C7FBE00225EBC /* DishListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D77241C7FBE00225EBC /* DishListWireFrame.swift */; };
+		841E9D7A241C7FE800225EBC /* DishListWireFrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D79241C7FE800225EBC /* DishListWireFrameProtocol.swift */; };
+		841E9D7C241C801400225EBC /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D7B241C801400225EBC /* DishCell.swift */; };
+		841E9D7E241C808A00225EBC /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D7D241C808A00225EBC /* Dish.swift */; };
+		841E9D80241C81ED00225EBC /* DishListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D7F241C81ED00225EBC /* DishListInteractor.swift */; };
+		841E9D82241C821000225EBC /* DishListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D81241C821000225EBC /* DishListInteractorProtocol.swift */; };
+		841E9D84241C827C00225EBC /* DishListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D83241C827C00225EBC /* DishListPresenter.swift */; };
+		841E9D86241C828F00225EBC /* DishListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D85241C828F00225EBC /* DishListPresenterProtocol.swift */; };
+		84C5FFDE2420A5CF00DDEB8A /* RealmDishListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5FFDD2420A5CF00DDEB8A /* RealmDishListStoryboard.storyboard */; };
+		84C5FFE02420A66A00DDEB8A /* RealmDishDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C5FFDF2420A66A00DDEB8A /* RealmDishDetailStoryboard.storyboard */; };
+		84E8DFC8241CB8100038DA99 /* StandardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E8DFC7241CB8100038DA99 /* StandardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +124,85 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0589F98E6107C9611F954C31 /* Pods_VIPER_v5Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_v5Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C45CF050BA04F54066C4BD /* Pods-VIPER v5-VIPER v5UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER v5-VIPER v5UITests.debug.xcconfig"; path = "Target Support Files/Pods-VIPER v5-VIPER v5UITests/Pods-VIPER v5-VIPER v5UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D27CEB42424A78C003B1129 /* RealmDishListLocalDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListLocalDataManagerProtocol.swift; sourceTree = "<group>"; };
+		0D27CEB62424A79E003B1129 /* RealmDishListLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListLocalDataManager.swift; sourceTree = "<group>"; };
+		0D27CEB82424A7EE003B1129 /* RealmDishListRemoteDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListRemoteDataManagerProtocol.swift; sourceTree = "<group>"; };
+		0D27CEBA2424A7FE003B1129 /* RealmDishListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListRemoteDataManager.swift; sourceTree = "<group>"; };
+		0D457D9A2424683100762A0E /* RealmDishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailViewController.swift; sourceTree = "<group>"; };
+		0D457D9C2424684500762A0E /* RealmDishDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailPresenter.swift; sourceTree = "<group>"; };
+		0D457D9E2424685000762A0E /* RealmDishDetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		0D457DA02424686400762A0E /* RealmDishDetailViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailViewControllerProtocol.swift; sourceTree = "<group>"; };
+		0D457DA22424687500762A0E /* RealmDishDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailInteractor.swift; sourceTree = "<group>"; };
+		0D457DA42424688300762A0E /* RealmDishDetailInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailInteractorProtocol.swift; sourceTree = "<group>"; };
+		0D457DA62424689A00762A0E /* RealmDishDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailWireFrame.swift; sourceTree = "<group>"; };
+		0D457DA9242468AA00762A0E /* RealmDishDetailWireFrameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailWireFrameProtocol.swift; sourceTree = "<group>"; };
+		0D457DAB242468D200762A0E /* RealmDishDetailConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailConfig.swift; sourceTree = "<group>"; };
+		0D457DAD242468E900762A0E /* RealmDishDetailRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailRemoteDataManager.swift; sourceTree = "<group>"; };
+		0D457DAF242468F600762A0E /* RealmDishDetailRemoteDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailRemoteDataManagerProtocol.swift; sourceTree = "<group>"; };
+		0D457DB12424690600762A0E /* RealmDishDetailLocalDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailLocalDataManagerProtocol.swift; sourceTree = "<group>"; };
+		0D457DB32424691300762A0E /* RealmDishDetailLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishDetailLocalDataManager.swift; sourceTree = "<group>"; };
+		0D457DB524246F7400762A0E /* AlamofireDishListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDishListPresenter.swift; sourceTree = "<group>"; };
+		0D457DB724246F9000762A0E /* AlamofireDishListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDishListPresenterProtocol.swift; sourceTree = "<group>"; };
+		0D457DB924246FBE00762A0E /* AlamofireDishListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDishListInteractor.swift; sourceTree = "<group>"; };
+		0D457DBB24246FC900762A0E /* AlamofireDishListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDishListInteractorProtocol.swift; sourceTree = "<group>"; };
+		0D457DBD24246FDF00762A0E /* AlamofireDishListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDishListWireFrame.swift; sourceTree = "<group>"; };
+		0D457DBF24246FEB00762A0E /* AlamofireDishListWireFrameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDishListWireFrameProtocol.swift; sourceTree = "<group>"; };
+		0D457DC12424700400762A0E /* AlamofireDishListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDishListRemoteDataManager.swift; sourceTree = "<group>"; };
+		0D457DC32424701300762A0E /* AlamofireDishListRemoteDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDishListRemoteDataManagerProtocol.swift; sourceTree = "<group>"; };
+		0D457DC52424702400762A0E /* AlamofireDishListLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDishListLocalDataManager.swift; sourceTree = "<group>"; };
+		0D457DC72424703100762A0E /* AlamofireDishListLocalDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDishListLocalDataManagerProtocol.swift; sourceTree = "<group>"; };
+		0D4C11EF24232B5900595FD6 /* ViperDishDetailConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperDishDetailConfig.swift; sourceTree = "<group>"; };
+		0D9D2D3B2423A9E000DF7F4E /* DishListConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListConfig.swift; sourceTree = "<group>"; };
+		0D9D2D3D2423AD2300DF7F4E /* RealmDishListConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListConfig.swift; sourceTree = "<group>"; };
+		0D9D2D3F2423AD8200DF7F4E /* RealmDishListViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListViewControllerProtocol.swift; sourceTree = "<group>"; };
+		0D9D2D412423AD9700DF7F4E /* RealmDishListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListCell.swift; sourceTree = "<group>"; };
+		0D9D2D432423ADB100DF7F4E /* RealmDishListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListPresenter.swift; sourceTree = "<group>"; };
+		0D9D2D452423ADC000DF7F4E /* RealmDishListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListPresenterProtocol.swift; sourceTree = "<group>"; };
+		0D9D2D472423ADD100DF7F4E /* RealmDishListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListInteractor.swift; sourceTree = "<group>"; };
+		0D9D2D492423ADE100DF7F4E /* RealmDishListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListInteractorProtocol.swift; sourceTree = "<group>"; };
+		0D9D2D4B2423ADF400DF7F4E /* RealmDishListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListWireFrame.swift; sourceTree = "<group>"; };
+		0D9D2D4D2423AE0200DF7F4E /* RealmDishListWireFrameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListWireFrameProtocol.swift; sourceTree = "<group>"; };
+		0D9D2D4F2423AFD700DF7F4E /* RealmDishModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishModel.swift; sourceTree = "<group>"; };
+		0D9D2D512423B6DA00DF7F4E /* AutoLayoutDishListConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutDishListConfig.swift; sourceTree = "<group>"; };
+		0D9D2D532423B75F00DF7F4E /* ObjectMapperDishListConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperDishListConfig.swift; sourceTree = "<group>"; };
+		0D9D2D552423B80E00DF7F4E /* AlarmofireDishListConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmofireDishListConfig.swift; sourceTree = "<group>"; };
+		0DAECEC42425D5BA00951949 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		0DCD9D8B24231FB10053893A /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		0DCD9D8D24231FC30053893A /* DishDetailViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewControllerProtocol.swift; sourceTree = "<group>"; };
+		0DCD9D8F24231FDC0053893A /* DishDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DishDetail.storyboard; sourceTree = "<group>"; };
+		0DCD9D91242320F60053893A /* DishDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailPresenter.swift; sourceTree = "<group>"; };
+		0DCD9D93242321030053893A /* DishDetailPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailPresenterProtocol.swift; sourceTree = "<group>"; };
+		0DCD9D952423211D0053893A /* DishDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailInteractor.swift; sourceTree = "<group>"; };
+		0DCD9D972423212F0053893A /* DishDetailInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailInteractorProtocol.swift; sourceTree = "<group>"; };
+		0DCD9D99242321430053893A /* DishDetailWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailWireFrame.swift; sourceTree = "<group>"; };
+		0DCD9D9B242321500053893A /* DishDetailWireFrameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailWireFrameProtocol.swift; sourceTree = "<group>"; };
+		0DD879B32421BE5A0063925B /* RealmDishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishListViewController.swift; sourceTree = "<group>"; };
+		0DD879B52421C2FE0063925B /* ViperDishListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViperDishListStoryboard.storyboard; sourceTree = "<group>"; };
+		0DD879B72421CB5F0063925B /* AlamofireDishListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlamofireDishListStoryboard.storyboard; sourceTree = "<group>"; };
+		0DD879B92421CB920063925B /* AlamofireDishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireDishListViewController.swift; sourceTree = "<group>"; };
+		0DD879C32421CED50063925B /* ObjectMapperDishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperDishListViewController.swift; sourceTree = "<group>"; };
+		0DD879C52421CEE80063925B /* ObjectMapperDishListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ObjectMapperDishListStoryboard.storyboard; sourceTree = "<group>"; };
+		0DD879CF2421DE200063925B /* AutoLayoutDishListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoLayoutDishListStoryboard.storyboard; sourceTree = "<group>"; };
+		0DD879D12421DE2B0063925B /* AutoLayoutDishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutDishListViewController.swift; sourceTree = "<group>"; };
+		0DDF034F24285F380054BEDF /* ObjectMapperDish2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperDish2.swift; sourceTree = "<group>"; };
+		0DDF035124286E190054BEDF /* RealmDishModel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDishModel2.swift; sourceTree = "<group>"; };
+		0DDF03542428795B0054BEDF /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0DDF0356242879C30054BEDF /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		0DDF03582428A1300054BEDF /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		0DEE25EB24274FC60065939B /* ObjectMapperDishListRemoteDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperDishListRemoteDataManagerProtocol.swift; sourceTree = "<group>"; };
+		0DEE25ED24274FD10065939B /* ObjectMapperDishListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperDishListRemoteDataManager.swift; sourceTree = "<group>"; };
+		0DEE25EF24275A040065939B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		0DEE25F124276E4E0065939B /* BaseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseObject.swift; sourceTree = "<group>"; };
+		0DEE25F324279D610065939B /* ObjectMapperDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperDish.swift; sourceTree = "<group>"; };
+		0DFA20B3242624B10081CBF0 /* ObjectMapperDishModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperDishModel.swift; sourceTree = "<group>"; };
+		0DFC28D42429E60D00A92EA9 /* DishListLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListLocalDataManager.swift; sourceTree = "<group>"; };
+		0DFC28D62429E62000A92EA9 /* DishListLocalDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListLocalDataManagerProtocol.swift; sourceTree = "<group>"; };
+		18C8427D00A5D00A7C22CC7D /* Pods-VIPER v5.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER v5.debug.xcconfig"; path = "Target Support Files/Pods-VIPER v5/Pods-VIPER v5.debug.xcconfig"; sourceTree = "<group>"; };
+		524B8BCD2E913BBF5248AA6D /* Pods-VIPER v5Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER v5Tests.release.xcconfig"; path = "Target Support Files/Pods-VIPER v5Tests/Pods-VIPER v5Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6A743DA0F91E840B95D0D6FE /* Pods-VIPER v5Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER v5Tests.debug.xcconfig"; path = "Target Support Files/Pods-VIPER v5Tests/Pods-VIPER v5Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E19FE6AF8B7E6A8B6DB0091 /* Pods-VIPER v5-VIPER v5UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER v5-VIPER v5UITests.release.xcconfig"; path = "Target Support Files/Pods-VIPER v5-VIPER v5UITests/Pods-VIPER v5-VIPER v5UITests.release.xcconfig"; sourceTree = "<group>"; };
 		841E9D35241C74A800225EBC /* VIPER v5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER v5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		841E9D38241C74A800225EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		841E9D3A241C74A800225EBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +217,22 @@
 		841E9D57241C74AB00225EBC /* VIPER v5UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER v5UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		841E9D5B241C74AC00225EBC /* VIPER_v5UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_v5UITests.swift; sourceTree = "<group>"; };
 		841E9D5D241C74AC00225EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		841E9D73241C7F7100225EBC /* DishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListViewController.swift; sourceTree = "<group>"; };
+		841E9D75241C7F8700225EBC /* DishListViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListViewControllerProtocol.swift; sourceTree = "<group>"; };
+		841E9D77241C7FBE00225EBC /* DishListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListWireFrame.swift; sourceTree = "<group>"; };
+		841E9D79241C7FE800225EBC /* DishListWireFrameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListWireFrameProtocol.swift; sourceTree = "<group>"; };
+		841E9D7B241C801400225EBC /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
+		841E9D7D241C808A00225EBC /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		841E9D7F241C81ED00225EBC /* DishListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListInteractor.swift; sourceTree = "<group>"; };
+		841E9D81241C821000225EBC /* DishListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListInteractorProtocol.swift; sourceTree = "<group>"; };
+		841E9D83241C827C00225EBC /* DishListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListPresenter.swift; sourceTree = "<group>"; };
+		841E9D85241C828F00225EBC /* DishListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListPresenterProtocol.swift; sourceTree = "<group>"; };
+		84C5FFDD2420A5CF00DDEB8A /* RealmDishListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealmDishListStoryboard.storyboard; sourceTree = "<group>"; };
+		84C5FFDF2420A66A00DDEB8A /* RealmDishDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RealmDishDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		84E8DFC7241CB8100038DA99 /* StandardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardViewController.swift; sourceTree = "<group>"; };
+		BFB93DFD392A6AD9B2056028 /* Pods-VIPER v5.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER v5.release.xcconfig"; path = "Target Support Files/Pods-VIPER v5/Pods-VIPER v5.release.xcconfig"; sourceTree = "<group>"; };
+		CFEB775A973A6C663F9E647B /* Pods_VIPER_v5.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_v5.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06274B43766F34AF156EDF8 /* Pods_VIPER_v5_VIPER_v5UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_v5_VIPER_v5UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +240,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FC356E3BC7895D7C4A99479 /* Pods_VIPER_v5.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +248,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C5FAFBA65A36DE4FA2A160 /* Pods_VIPER_v5Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +256,455 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26C8424C023CD5C95229F9F6 /* Pods_VIPER_v5_VIPER_v5UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D457D8624245C0C00762A0E /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0D457D8924245C2D00762A0E /* Local */,
+				0D457D8824245C1E00762A0E /* Remote */,
+			);
+			name = DataManager;
+			path = "DataManagẻ";
+			sourceTree = "<group>";
+		};
+		0D457D8724245C1700762A0E /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0D457D8B24245C3800762A0E /* Local */,
+				0D457D8A24245C3300762A0E /* Remote */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		0D457D8824245C1E00762A0E /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				0D27CEB82424A7EE003B1129 /* RealmDishListRemoteDataManagerProtocol.swift */,
+				0D27CEBA2424A7FE003B1129 /* RealmDishListRemoteDataManager.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		0D457D8924245C2D00762A0E /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				0D27CEB42424A78C003B1129 /* RealmDishListLocalDataManagerProtocol.swift */,
+				0D27CEB62424A79E003B1129 /* RealmDishListLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		0D457D8A24245C3300762A0E /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				0D457DAD242468E900762A0E /* RealmDishDetailRemoteDataManager.swift */,
+				0D457DAF242468F600762A0E /* RealmDishDetailRemoteDataManagerProtocol.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		0D457D8B24245C3800762A0E /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				0D457DB32424691300762A0E /* RealmDishDetailLocalDataManager.swift */,
+				0D457DB12424690600762A0E /* RealmDishDetailLocalDataManagerProtocol.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		0D457D94242467A800762A0E /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0D457D96242467B900762A0E /* Local */,
+				0D457D95242467B100762A0E /* Remote */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		0D457D95242467B100762A0E /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				0D457DC12424700400762A0E /* AlamofireDishListRemoteDataManager.swift */,
+				0D457DC32424701300762A0E /* AlamofireDishListRemoteDataManagerProtocol.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		0D457D96242467B900762A0E /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				0D457DC52424702400762A0E /* AlamofireDishListLocalDataManager.swift */,
+				0D457DC72424703100762A0E /* AlamofireDishListLocalDataManagerProtocol.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		0D457D97242467BD00762A0E /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0D457D99242467CE00762A0E /* Local */,
+				0D457D98242467CA00762A0E /* Remote */,
+			);
+			name = DataManager;
+			path = "DataManagẻ";
+			sourceTree = "<group>";
+		};
+		0D457D98242467CA00762A0E /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		0D457D99242467CE00762A0E /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		0D48F0112424787600BE30B5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0D48F0122424787B00BE30B5 /* Network */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0D48F0122424787B00BE30B5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		0D4C11ED24232B2E00595FD6 /* DishDetailConfig */ = {
+			isa = PBXGroup;
+			children = (
+				0D4C11EF24232B5900595FD6 /* ViperDishDetailConfig.swift */,
+			);
+			path = DishDetailConfig;
+			sourceTree = "<group>";
+		};
+		0D4C11EE24232B3A00595FD6 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D2D3B2423A9E000DF7F4E /* DishListConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0DAECEC32425D5AB00951949 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0DAECEC42425D5BA00951949 /* Realm.swift */,
+				0DEE25EF24275A040065939B /* String.swift */,
+				0DDF03582428A1300054BEDF /* UIScrollView.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		0DCD9D862423171A0053893A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DCD9D8B24231FB10053893A /* DishDetailViewController.swift */,
+				0DCD9D8D24231FC30053893A /* DishDetailViewControllerProtocol.swift */,
+				0DCD9D8F24231FDC0053893A /* DishDetail.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0DCD9D872423171F0053893A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0DCD9D91242320F60053893A /* DishDetailPresenter.swift */,
+				0DCD9D93242321030053893A /* DishDetailPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0DCD9D88242317260053893A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0DCD9D952423211D0053893A /* DishDetailInteractor.swift */,
+				0DCD9D972423212F0053893A /* DishDetailInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0DCD9D892423172C0053893A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0DCD9D8A242317370053893A /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				0DCD9D99242321430053893A /* DishDetailWireFrame.swift */,
+				0DCD9D9B242321500053893A /* DishDetailWireFrameProtocol.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		0DD879BB2421CE850063925B /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				0DD879BD2421CE9B0063925B /* DishDetail */,
+				0DD879BC2421CE930063925B /* DishList */,
+			);
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		0DD879BC2421CE930063925B /* DishList */ = {
+			isa = PBXGroup;
+			children = (
+				0DEE25E824274F920065939B /* DataManager */,
+				0DE8FDAE242363E200AAE092 /* Config */,
+				0DD879C22421CEBD0063925B /* WireFrame */,
+				0DD879C12421CEB70063925B /* Entity */,
+				0DD879C02421CEAC0063925B /* Interactor */,
+				0DD879BF2421CEA60063925B /* Presenter */,
+				0DD879BE2421CEA20063925B /* View */,
+			);
+			path = DishList;
+			sourceTree = "<group>";
+		};
+		0DD879BD2421CE9B0063925B /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0DE8FDAF242363E900AAE092 /* Config */,
+			);
+			path = DishDetail;
+			sourceTree = "<group>";
+		};
+		0DD879BE2421CEA20063925B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DD879C32421CED50063925B /* ObjectMapperDishListViewController.swift */,
+				0DD879C52421CEE80063925B /* ObjectMapperDishListStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0DD879BF2421CEA60063925B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0DD879C02421CEAC0063925B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0DD879C12421CEB70063925B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0DFA20B3242624B10081CBF0 /* ObjectMapperDishModel.swift */,
+				0DEE25F324279D610065939B /* ObjectMapperDish.swift */,
+				0DDF034F24285F380054BEDF /* ObjectMapperDish2.swift */,
+				0DEE25F124276E4E0065939B /* BaseObject.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0DD879C22421CEBD0063925B /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		0DD879C72421DDD90063925B /* AUTOLAYOUT */ = {
+			isa = PBXGroup;
+			children = (
+				0DD879C92421DDEA0063925B /* DishDetail */,
+				0DD879C82421DDE50063925B /* DishList */,
+			);
+			path = AUTOLAYOUT;
+			sourceTree = "<group>";
+		};
+		0DD879C82421DDE50063925B /* DishList */ = {
+			isa = PBXGroup;
+			children = (
+				0DE8FDB0242363EF00AAE092 /* Config */,
+				0DD879CE2421DE050063925B /* WireFrame */,
+				0DD879CD2421DE000063925B /* Entity */,
+				0DD879CC2421DDFB0063925B /* Interactor */,
+				0DD879CB2421DDF50063925B /* Presenter */,
+				0DD879CA2421DDF10063925B /* View */,
+			);
+			path = DishList;
+			sourceTree = "<group>";
+		};
+		0DD879C92421DDEA0063925B /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DishDetail;
+			sourceTree = "<group>";
+		};
+		0DD879CA2421DDF10063925B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DD879CF2421DE200063925B /* AutoLayoutDishListStoryboard.storyboard */,
+				0DD879D12421DE2B0063925B /* AutoLayoutDishListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0DD879CB2421DDF50063925B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0DD879CC2421DDFB0063925B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0DD879CD2421DE000063925B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		0DD879CE2421DE050063925B /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		0DDF03532428794D0054BEDF /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0DDF03542428795B0054BEDF /* Constant.swift */,
+				0DDF0356242879C30054BEDF /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0DE8FDAA242363BB00AAE092 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D2D3D2423AD2300DF7F4E /* RealmDishListConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0DE8FDAB242363C700AAE092 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0D457DAB242468D200762A0E /* RealmDishDetailConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0DE8FDAC242363D000AAE092 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D2D552423B80E00DF7F4E /* AlarmofireDishListConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0DE8FDAD242363DC00AAE092 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0DE8FDAE242363E200AAE092 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D2D532423B75F00DF7F4E /* ObjectMapperDishListConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0DE8FDAF242363E900AAE092 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0DE8FDB0242363EF00AAE092 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D2D512423B6DA00DF7F4E /* AutoLayoutDishListConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		0DEE25E824274F920065939B /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0DEE25EA24274F9F0065939B /* Remote */,
+				0DEE25E924274F990065939B /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		0DEE25E924274F990065939B /* Local */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		0DEE25EA24274F9F0065939B /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				0DEE25EB24274FC60065939B /* ObjectMapperDishListRemoteDataManagerProtocol.swift */,
+				0DEE25ED24274FD10065939B /* ObjectMapperDishListRemoteDataManager.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		0DFC28D12429BDD800A92EA9 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0DFC28D32429BDF000A92EA9 /* RemoteDataManager */,
+				0DFC28D22429BDDF00A92EA9 /* LocalDataManager */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		0DFC28D22429BDDF00A92EA9 /* LocalDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				0DFC28D42429E60D00A92EA9 /* DishListLocalDataManager.swift */,
+				0DFC28D62429E62000A92EA9 /* DishListLocalDataManagerProtocol.swift */,
+			);
+			path = LocalDataManager;
+			sourceTree = "<group>";
+		};
+		0DFC28D32429BDF000A92EA9 /* RemoteDataManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RemoteDataManager;
+			sourceTree = "<group>";
+		};
 		841E9D2C241C74A800225EBC = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +712,8 @@
 				841E9D4F241C74AB00225EBC /* VIPER v5Tests */,
 				841E9D5A241C74AC00225EBC /* VIPER v5UITests */,
 				841E9D36241C74A800225EBC /* Products */,
+				8432D0BCC82C4D8820802DB8 /* Pods */,
+				F261F5DCA43A943AD2C50CF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +730,15 @@
 		841E9D37241C74A800225EBC /* VIPER v5 */ = {
 			isa = PBXGroup;
 			children = (
+				0DDF03532428794D0054BEDF /* Config */,
+				0DAECEC32425D5AB00951949 /* Extension */,
+				0D48F0112424787600BE30B5 /* Utils */,
+				84E8DFC6241CB78D0038DA99 /* StandardClass */,
+				0DD879C72421DDD90063925B /* AUTOLAYOUT */,
+				0DD879BB2421CE850063925B /* ObjectMapper */,
+				841E9D6B241C7D8B00225EBC /* ALAMOFIRE */,
+				841E9D6A241C7D7D00225EBC /* REALM */,
+				841E9D69241C7D6900225EBC /* VIPER */,
 				841E9D38241C74A800225EBC /* AppDelegate.swift */,
 				841E9D3A241C74A800225EBC /* ViewController.swift */,
 				841E9D3C241C74A800225EBC /* Main.storyboard */,
@@ -128,6 +768,363 @@
 			path = "VIPER v5UITests";
 			sourceTree = "<group>";
 		};
+		841E9D69241C7D6900225EBC /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				841E9D6D241C7DA500225EBC /* DishDetail */,
+				841E9D6C241C7D9400225EBC /* DishList */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		841E9D6A241C7D7D00225EBC /* REALM */ = {
+			isa = PBXGroup;
+			children = (
+				84C5FFC62420A4D500DDEB8A /* DishDetail */,
+				84C5FFC52420A46900DDEB8A /* DishList */,
+			);
+			path = REALM;
+			sourceTree = "<group>";
+		};
+		841E9D6B241C7D8B00225EBC /* ALAMOFIRE */ = {
+			isa = PBXGroup;
+			children = (
+				84C5FFD22420A56600DDEB8A /* DishDetail */,
+				84C5FFD12420A55D00DDEB8A /* DIshList */,
+			);
+			path = ALAMOFIRE;
+			sourceTree = "<group>";
+		};
+		841E9D6C241C7D9400225EBC /* DishList */ = {
+			isa = PBXGroup;
+			children = (
+				0DFC28D12429BDD800A92EA9 /* DataManager */,
+				0D4C11EE24232B3A00595FD6 /* Config */,
+				841E9D72241C7F5200225EBC /* WireFrame */,
+				841E9D71241C7F4500225EBC /* Entity */,
+				841E9D70241C7F3300225EBC /* Interactor */,
+				841E9D6F241C7F1800225EBC /* Presenter */,
+				841E9D6E241C7DC300225EBC /* View */,
+			);
+			path = DishList;
+			sourceTree = "<group>";
+		};
+		841E9D6D241C7DA500225EBC /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0D4C11ED24232B2E00595FD6 /* DishDetailConfig */,
+				0DCD9D8A242317370053893A /* WireFrame */,
+				0DCD9D892423172C0053893A /* Entity */,
+				0DCD9D88242317260053893A /* Interactor */,
+				0DCD9D872423171F0053893A /* Presenter */,
+				0DCD9D862423171A0053893A /* View */,
+			);
+			path = DishDetail;
+			sourceTree = "<group>";
+		};
+		841E9D6E241C7DC300225EBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				841E9D73241C7F7100225EBC /* DishListViewController.swift */,
+				841E9D75241C7F8700225EBC /* DishListViewControllerProtocol.swift */,
+				841E9D7B241C801400225EBC /* DishCell.swift */,
+				0DD879B52421C2FE0063925B /* ViperDishListStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		841E9D6F241C7F1800225EBC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				841E9D83241C827C00225EBC /* DishListPresenter.swift */,
+				841E9D85241C828F00225EBC /* DishListPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		841E9D70241C7F3300225EBC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				841E9D7F241C81ED00225EBC /* DishListInteractor.swift */,
+				841E9D81241C821000225EBC /* DishListInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		841E9D71241C7F4500225EBC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				841E9D7D241C808A00225EBC /* Dish.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		841E9D72241C7F5200225EBC /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				841E9D77241C7FBE00225EBC /* DishListWireFrame.swift */,
+				841E9D79241C7FE800225EBC /* DishListWireFrameProtocol.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		8432D0BCC82C4D8820802DB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18C8427D00A5D00A7C22CC7D /* Pods-VIPER v5.debug.xcconfig */,
+				BFB93DFD392A6AD9B2056028 /* Pods-VIPER v5.release.xcconfig */,
+				06C45CF050BA04F54066C4BD /* Pods-VIPER v5-VIPER v5UITests.debug.xcconfig */,
+				6E19FE6AF8B7E6A8B6DB0091 /* Pods-VIPER v5-VIPER v5UITests.release.xcconfig */,
+				6A743DA0F91E840B95D0D6FE /* Pods-VIPER v5Tests.debug.xcconfig */,
+				524B8BCD2E913BBF5248AA6D /* Pods-VIPER v5Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		84C5FFC52420A46900DDEB8A /* DishList */ = {
+			isa = PBXGroup;
+			children = (
+				0D457D8624245C0C00762A0E /* DataManager */,
+				0DE8FDAA242363BB00AAE092 /* Config */,
+				84C5FFD02420A54300DDEB8A /* WireFrame */,
+				84C5FFCF2420A53A00DDEB8A /* Entity */,
+				84C5FFCE2420A53400DDEB8A /* Interactor */,
+				84C5FFCD2420A52D00DDEB8A /* Presenter */,
+				84C5FFCC2420A52300DDEB8A /* View */,
+			);
+			path = DishList;
+			sourceTree = "<group>";
+		};
+		84C5FFC62420A4D500DDEB8A /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0D457D8724245C1700762A0E /* DataManager */,
+				0DE8FDAB242363C700AAE092 /* Config */,
+				84C5FFCB2420A51B00DDEB8A /* WireFrame */,
+				84C5FFCA2420A51300DDEB8A /* Entity */,
+				84C5FFC92420A50B00DDEB8A /* Interactor */,
+				84C5FFC82420A50300DDEB8A /* Presenter */,
+				84C5FFC72420A4F400DDEB8A /* View */,
+			);
+			path = DishDetail;
+			sourceTree = "<group>";
+		};
+		84C5FFC72420A4F400DDEB8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84C5FFDF2420A66A00DDEB8A /* RealmDishDetailStoryboard.storyboard */,
+				0D457DA02424686400762A0E /* RealmDishDetailViewControllerProtocol.swift */,
+				0D457D9A2424683100762A0E /* RealmDishDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84C5FFC82420A50300DDEB8A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0D457D9C2424684500762A0E /* RealmDishDetailPresenter.swift */,
+				0D457D9E2424685000762A0E /* RealmDishDetailPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84C5FFC92420A50B00DDEB8A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0D457DA22424687500762A0E /* RealmDishDetailInteractor.swift */,
+				0D457DA42424688300762A0E /* RealmDishDetailInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		84C5FFCA2420A51300DDEB8A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		84C5FFCB2420A51B00DDEB8A /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				0D457DA62424689A00762A0E /* RealmDishDetailWireFrame.swift */,
+				0D457DA9242468AA00762A0E /* RealmDishDetailWireFrameProtocol.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		84C5FFCC2420A52300DDEB8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84C5FFDD2420A5CF00DDEB8A /* RealmDishListStoryboard.storyboard */,
+				0DD879B32421BE5A0063925B /* RealmDishListViewController.swift */,
+				0D9D2D3F2423AD8200DF7F4E /* RealmDishListViewControllerProtocol.swift */,
+				0D9D2D412423AD9700DF7F4E /* RealmDishListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84C5FFCD2420A52D00DDEB8A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D2D432423ADB100DF7F4E /* RealmDishListPresenter.swift */,
+				0D9D2D452423ADC000DF7F4E /* RealmDishListPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84C5FFCE2420A53400DDEB8A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D2D472423ADD100DF7F4E /* RealmDishListInteractor.swift */,
+				0D9D2D492423ADE100DF7F4E /* RealmDishListInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		84C5FFCF2420A53A00DDEB8A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D2D4F2423AFD700DF7F4E /* RealmDishModel.swift */,
+				0DDF035124286E190054BEDF /* RealmDishModel2.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		84C5FFD02420A54300DDEB8A /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				0D9D2D4B2423ADF400DF7F4E /* RealmDishListWireFrame.swift */,
+				0D9D2D4D2423AE0200DF7F4E /* RealmDishListWireFrameProtocol.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		84C5FFD12420A55D00DDEB8A /* DIshList */ = {
+			isa = PBXGroup;
+			children = (
+				0D457D94242467A800762A0E /* DataManager */,
+				0DE8FDAC242363D000AAE092 /* Config */,
+				84C5FFD72420A59200DDEB8A /* WireFrame */,
+				84C5FFD62420A58C00DDEB8A /* Entiry */,
+				84C5FFD52420A58700DDEB8A /* Interactor */,
+				84C5FFD42420A58000DDEB8A /* Presenter */,
+				84C5FFD32420A57B00DDEB8A /* View */,
+			);
+			path = DIshList;
+			sourceTree = "<group>";
+		};
+		84C5FFD22420A56600DDEB8A /* DishDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0D457D97242467BD00762A0E /* DataManager */,
+				0DE8FDAD242363DC00AAE092 /* Config */,
+				84C5FFDC2420A5B100DDEB8A /* WireFrame */,
+				84C5FFDB2420A5A900DDEB8A /* Entiry */,
+				84C5FFDA2420A5A200DDEB8A /* Interactor */,
+				84C5FFD92420A59C00DDEB8A /* Presenter */,
+				84C5FFD82420A59800DDEB8A /* View */,
+			);
+			path = DishDetail;
+			sourceTree = "<group>";
+		};
+		84C5FFD32420A57B00DDEB8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DD879B72421CB5F0063925B /* AlamofireDishListStoryboard.storyboard */,
+				0DD879B92421CB920063925B /* AlamofireDishListViewController.swift */,
+			);
+			name = View;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		84C5FFD42420A58000DDEB8A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0D457DB524246F7400762A0E /* AlamofireDishListPresenter.swift */,
+				0D457DB724246F9000762A0E /* AlamofireDishListPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84C5FFD52420A58700DDEB8A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				0D457DB924246FBE00762A0E /* AlamofireDishListInteractor.swift */,
+				0D457DBB24246FC900762A0E /* AlamofireDishListInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		84C5FFD62420A58C00DDEB8A /* Entiry */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entiry;
+			sourceTree = "<group>";
+		};
+		84C5FFD72420A59200DDEB8A /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				0D457DBD24246FDF00762A0E /* AlamofireDishListWireFrame.swift */,
+				0D457DBF24246FEB00762A0E /* AlamofireDishListWireFrameProtocol.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		84C5FFD82420A59800DDEB8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84C5FFD92420A59C00DDEB8A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84C5FFDA2420A5A200DDEB8A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		84C5FFDB2420A5A900DDEB8A /* Entiry */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entiry;
+			sourceTree = "<group>";
+		};
+		84C5FFDC2420A5B100DDEB8A /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		84E8DFC6241CB78D0038DA99 /* StandardClass */ = {
+			isa = PBXGroup;
+			children = (
+				84E8DFC7241CB8100038DA99 /* StandardViewController.swift */,
+			);
+			path = StandardClass;
+			sourceTree = "<group>";
+		};
+		F261F5DCA43A943AD2C50CF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFEB775A973A6C663F9E647B /* Pods_VIPER_v5.framework */,
+				F06274B43766F34AF156EDF8 /* Pods_VIPER_v5_VIPER_v5UITests.framework */,
+				0589F98E6107C9611F954C31 /* Pods_VIPER_v5Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +1132,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 841E9D60241C74AC00225EBC /* Build configuration list for PBXNativeTarget "VIPER v5" */;
 			buildPhases = (
+				B1145ACCCBC43AFC5BC0BE83 /* [CP] Check Pods Manifest.lock */,
 				841E9D31241C74A800225EBC /* Sources */,
 				841E9D32241C74A800225EBC /* Frameworks */,
 				841E9D33241C74A800225EBC /* Resources */,
+				71835692329B005631C8699D /* [CP] Embed Pods Frameworks */,
+				FF263B73FECFA457E54034DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +1152,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 841E9D63241C74AC00225EBC /* Build configuration list for PBXNativeTarget "VIPER v5Tests" */;
 			buildPhases = (
+				245B2E7E1D2C4D28874039E1 /* [CP] Check Pods Manifest.lock */,
 				841E9D48241C74AB00225EBC /* Sources */,
 				841E9D49241C74AB00225EBC /* Frameworks */,
 				841E9D4A241C74AB00225EBC /* Resources */,
@@ -170,9 +1171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 841E9D66241C74AC00225EBC /* Build configuration list for PBXNativeTarget "VIPER v5UITests" */;
 			buildPhases = (
+				E40AF98FEC2ACC1F94BB3940 /* [CP] Check Pods Manifest.lock */,
 				841E9D53241C74AB00225EBC /* Sources */,
 				841E9D54241C74AB00225EBC /* Frameworks */,
 				841E9D55241C74AB00225EBC /* Resources */,
+				8F5D775573C261AF4DF7F0BE /* [CP] Embed Pods Frameworks */,
+				789EB40294388F681BCE11A2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +1236,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD879B62421C2FE0063925B /* ViperDishListStoryboard.storyboard in Resources */,
+				0DD879C62421CEE80063925B /* ObjectMapperDishListStoryboard.storyboard in Resources */,
+				84C5FFE02420A66A00DDEB8A /* RealmDishDetailStoryboard.storyboard in Resources */,
 				841E9D46241C74AB00225EBC /* LaunchScreen.storyboard in Resources */,
+				0DD879D02421DE200063925B /* AutoLayoutDishListStoryboard.storyboard in Resources */,
+				0DCD9D9024231FDC0053893A /* DishDetail.storyboard in Resources */,
 				841E9D43241C74AB00225EBC /* Assets.xcassets in Resources */,
 				841E9D3E241C74A800225EBC /* Main.storyboard in Resources */,
+				84C5FFDE2420A5CF00DDEB8A /* RealmDishListStoryboard.storyboard in Resources */,
+				0DD879B82421CB5F0063925B /* AlamofireDishListStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +1265,230 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		245B2E7E1D2C4D28874039E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPER v5Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71835692329B005631C8699D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER v5/Pods-VIPER v5-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER v5/Pods-VIPER v5-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPER v5/Pods-VIPER v5-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		789EB40294388F681BCE11A2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER v5-VIPER v5UITests/Pods-VIPER v5-VIPER v5UITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER v5-VIPER v5UITests/Pods-VIPER v5-VIPER v5UITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPER v5-VIPER v5UITests/Pods-VIPER v5-VIPER v5UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F5D775573C261AF4DF7F0BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER v5-VIPER v5UITests/Pods-VIPER v5-VIPER v5UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER v5-VIPER v5UITests/Pods-VIPER v5-VIPER v5UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPER v5-VIPER v5UITests/Pods-VIPER v5-VIPER v5UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1145ACCCBC43AFC5BC0BE83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPER v5-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E40AF98FEC2ACC1F94BB3940 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VIPER v5-VIPER v5UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF263B73FECFA457E54034DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER v5/Pods-VIPER v5-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VIPER v5/Pods-VIPER v5-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VIPER v5/Pods-VIPER v5-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		841E9D31241C74A800225EBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D457DAC242468D200762A0E /* RealmDishDetailConfig.swift in Sources */,
+				841E9D86241C828F00225EBC /* DishListPresenterProtocol.swift in Sources */,
+				0D9D2D522423B6DA00DF7F4E /* AutoLayoutDishListConfig.swift in Sources */,
+				0DCD9D982423212F0053893A /* DishDetailInteractorProtocol.swift in Sources */,
+				0DEE25F024275A040065939B /* String.swift in Sources */,
+				0DDF03592428A1300054BEDF /* UIScrollView.swift in Sources */,
+				0DFC28D52429E60D00A92EA9 /* DishListLocalDataManager.swift in Sources */,
+				0D9D2D562423B80E00DF7F4E /* AlarmofireDishListConfig.swift in Sources */,
+				841E9D78241C7FBE00225EBC /* DishListWireFrame.swift in Sources */,
+				0D457DBC24246FC900762A0E /* AlamofireDishListInteractorProtocol.swift in Sources */,
+				0DDF0357242879C30054BEDF /* Config.swift in Sources */,
+				0D4C11F024232B5900595FD6 /* ViperDishDetailConfig.swift in Sources */,
+				0DEE25F424279D610065939B /* ObjectMapperDish.swift in Sources */,
+				0D9D2D442423ADB100DF7F4E /* RealmDishListPresenter.swift in Sources */,
+				0D457DAA242468AA00762A0E /* RealmDishDetailWireFrameProtocol.swift in Sources */,
+				0D457DC024246FEB00762A0E /* AlamofireDishListWireFrameProtocol.swift in Sources */,
+				0D457DAE242468E900762A0E /* RealmDishDetailRemoteDataManager.swift in Sources */,
+				0D9D2D4A2423ADE100DF7F4E /* RealmDishListInteractorProtocol.swift in Sources */,
+				0DFA20B4242624B20081CBF0 /* ObjectMapperDishModel.swift in Sources */,
+				0D9D2D402423AD8200DF7F4E /* RealmDishListViewControllerProtocol.swift in Sources */,
+				0D457DB824246F9000762A0E /* AlamofireDishListPresenterProtocol.swift in Sources */,
+				841E9D82241C821000225EBC /* DishListInteractorProtocol.swift in Sources */,
+				0D457D9D2424684500762A0E /* RealmDishDetailPresenter.swift in Sources */,
+				0D9D2D3C2423A9E000DF7F4E /* DishListConfig.swift in Sources */,
+				0D457DA32424687500762A0E /* RealmDishDetailInteractor.swift in Sources */,
+				0D457DC82424703100762A0E /* AlamofireDishListLocalDataManagerProtocol.swift in Sources */,
+				0D457DB624246F7400762A0E /* AlamofireDishListPresenter.swift in Sources */,
+				0D9D2D462423ADC000DF7F4E /* RealmDishListPresenterProtocol.swift in Sources */,
+				0DD879BA2421CB920063925B /* AlamofireDishListViewController.swift in Sources */,
+				0D457DA12424686400762A0E /* RealmDishDetailViewControllerProtocol.swift in Sources */,
+				0D27CEBB2424A7FE003B1129 /* RealmDishListRemoteDataManager.swift in Sources */,
+				841E9D7C241C801400225EBC /* DishCell.swift in Sources */,
+				84E8DFC8241CB8100038DA99 /* StandardViewController.swift in Sources */,
+				0DD879C42421CED50063925B /* ObjectMapperDishListViewController.swift in Sources */,
 				841E9D3B241C74A800225EBC /* ViewController.swift in Sources */,
+				0DDF035024285F380054BEDF /* ObjectMapperDish2.swift in Sources */,
+				0DCD9D9C242321500053893A /* DishDetailWireFrameProtocol.swift in Sources */,
+				0DCD9D92242320F60053893A /* DishDetailPresenter.swift in Sources */,
+				0DDF03552428795B0054BEDF /* Constant.swift in Sources */,
+				0D9D2D502423AFD700DF7F4E /* RealmDishModel.swift in Sources */,
 				841E9D41241C74A800225EBC /* VIPER_v5.xcdatamodeld in Sources */,
+				0D457DB22424690600762A0E /* RealmDishDetailLocalDataManagerProtocol.swift in Sources */,
+				0D457DBE24246FDF00762A0E /* AlamofireDishListWireFrame.swift in Sources */,
+				0D27CEB72424A79E003B1129 /* RealmDishListLocalDataManager.swift in Sources */,
+				0D9D2D4C2423ADF400DF7F4E /* RealmDishListWireFrame.swift in Sources */,
+				0D457DA72424689A00762A0E /* RealmDishDetailWireFrame.swift in Sources */,
+				0DCD9D962423211D0053893A /* DishDetailInteractor.swift in Sources */,
+				0D457D9B2424683100762A0E /* RealmDishDetailViewController.swift in Sources */,
+				841E9D7E241C808A00225EBC /* Dish.swift in Sources */,
+				0DCD9D94242321030053893A /* DishDetailPresenterProtocol.swift in Sources */,
+				0D457DC22424700400762A0E /* AlamofireDishListRemoteDataManager.swift in Sources */,
+				841E9D84241C827C00225EBC /* DishListPresenter.swift in Sources */,
+				0D457DC62424702400762A0E /* AlamofireDishListLocalDataManager.swift in Sources */,
+				0D27CEB92424A7EE003B1129 /* RealmDishListRemoteDataManagerProtocol.swift in Sources */,
+				841E9D76241C7F8700225EBC /* DishListViewControllerProtocol.swift in Sources */,
+				0DCD9D9A242321430053893A /* DishDetailWireFrame.swift in Sources */,
+				0DD879B42421BE5A0063925B /* RealmDishListViewController.swift in Sources */,
+				0DEE25F224276E4E0065939B /* BaseObject.swift in Sources */,
+				0D9D2D3E2423AD2300DF7F4E /* RealmDishListConfig.swift in Sources */,
+				0D457DB42424691300762A0E /* RealmDishDetailLocalDataManager.swift in Sources */,
+				0DCD9D8E24231FC30053893A /* DishDetailViewControllerProtocol.swift in Sources */,
+				0DEE25EC24274FC60065939B /* ObjectMapperDishListRemoteDataManagerProtocol.swift in Sources */,
+				0D457DB0242468F600762A0E /* RealmDishDetailRemoteDataManagerProtocol.swift in Sources */,
+				0DDF035224286E190054BEDF /* RealmDishModel2.swift in Sources */,
+				0D9D2D482423ADD100DF7F4E /* RealmDishListInteractor.swift in Sources */,
+				0DFC28D72429E62000A92EA9 /* DishListLocalDataManagerProtocol.swift in Sources */,
+				841E9D80241C81ED00225EBC /* DishListInteractor.swift in Sources */,
+				0D457D9F2424685000762A0E /* RealmDishDetailPresenterProtocol.swift in Sources */,
+				0D9D2D4E2423AE0200DF7F4E /* RealmDishListWireFrameProtocol.swift in Sources */,
+				841E9D74241C7F7100225EBC /* DishListViewController.swift in Sources */,
+				0D9D2D542423B75F00DF7F4E /* ObjectMapperDishListConfig.swift in Sources */,
+				0DCD9D8C24231FB10053893A /* DishDetailViewController.swift in Sources */,
+				0DD879D22421DE2B0063925B /* AutoLayoutDishListViewController.swift in Sources */,
+				0D457DA52424688300762A0E /* RealmDishDetailInteractorProtocol.swift in Sources */,
+				0D457DBA24246FBE00762A0E /* AlamofireDishListInteractor.swift in Sources */,
+				0D457DC42424701300762A0E /* AlamofireDishListRemoteDataManagerProtocol.swift in Sources */,
 				841E9D39241C74A800225EBC /* AppDelegate.swift in Sources */,
+				0D9D2D422423AD9700DF7F4E /* RealmDishListCell.swift in Sources */,
+				0D27CEB52424A78C003B1129 /* RealmDishListLocalDataManagerProtocol.swift in Sources */,
+				0DEE25EE24274FD10065939B /* ObjectMapperDishListRemoteDataManager.swift in Sources */,
+				841E9D7A241C7FE800225EBC /* DishListWireFrameProtocol.swift in Sources */,
+				0DAECEC52425D5BA00951949 /* Realm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +1661,7 @@
 		};
 		841E9D61241C74AC00225EBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C8427D00A5D00A7C22CC7D /* Pods-VIPER v5.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +1680,7 @@
 		};
 		841E9D62241C74AC00225EBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB93DFD392A6AD9B2056028 /* Pods-VIPER v5.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -470,6 +1699,7 @@
 		};
 		841E9D64241C74AC00225EBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A743DA0F91E840B95D0D6FE /* Pods-VIPER v5Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +1721,7 @@
 		};
 		841E9D65241C74AC00225EBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 524B8BCD2E913BBF5248AA6D /* Pods-VIPER v5Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +1743,7 @@
 		};
 		841E9D67241C74AC00225EBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06C45CF050BA04F54066C4BD /* Pods-VIPER v5-VIPER v5UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +1764,7 @@
 		};
 		841E9D68241C74AC00225EBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E19FE6AF8B7E6A8B6DB0091 /* Pods-VIPER v5-VIPER v5UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
