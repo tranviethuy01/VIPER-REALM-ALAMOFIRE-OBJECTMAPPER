@@ -11,22 +11,17 @@ import RealmSwift
 
 protocol DishListInteractorInputProtocol: class {
     // PRESENTER -> INTERACTOR
-    
     //var presenter : DishListPresenterProtocol? {get set}
     var localDataManager: DishListLocalDataManagerProtocol? {get set}
-    
     var presenter : DishListInteractorOutputProtocol? {get set}
     
+    //func
     func getDishList()
-    
     func initDishList(id: Int)
-   
-
 }
 
 protocol DishListInteractorOutputProtocol : class {
     // INTERACTOR -> PRESENTER    
     func didInitDishList(dishList : [Dish])
-    
 
 }

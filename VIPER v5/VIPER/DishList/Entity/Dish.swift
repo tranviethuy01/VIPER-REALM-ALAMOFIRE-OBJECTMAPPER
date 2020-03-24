@@ -11,15 +11,11 @@ import UIKit
 //Dish model
 
 struct Dish {
-//    var name: String!
-//    var kalo: String!
     var avatar : String!
     var title : String!
     var shopName : String!
     
     init (attribute: [String: String]) {
-//        self.name = attribute["name"]
-//        self.kalo = attribute["kalo"]
         self.avatar = attribute["avatar"]
         self.title = attribute["title"]
         self.shopName = attribute["shopName"]

@@ -8,11 +8,8 @@
 
 import UIKit
 
-protocol DishListWireFrameProtocol: class {
-    
-    //chúng ta bắt đầu khởi tạo Presenter ở đây nhé
-    
+protocol DishListWireFrameProtocol: class {    
+    //init
     static func createDishListViewController (code : String) -> DishListViewController?
-    
     
 }

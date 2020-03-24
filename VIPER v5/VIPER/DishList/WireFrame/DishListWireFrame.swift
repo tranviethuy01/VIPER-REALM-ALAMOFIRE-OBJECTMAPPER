@@ -11,13 +11,9 @@ import UIKit
 class DishListWireFrame: DishListWireFrameProtocol {
     static func createDishListViewController(code: String) -> DishListViewController? {
         
-        
         let storyboard = UIStoryboard (name: "ViperDishListStoryboard", bundle: nil)
-//
         if let vc = storyboard.instantiateViewController(withIdentifier: "ViperDishListStoryboardID") as? DishListViewController {
             
-            
-            //print ("GKDEBUG >> \(presenter)")
             let presenter = DishListPresenter()
             let interactor = DishListInteractor()
             let wireFrame = DishListWireFrame()
@@ -37,13 +33,11 @@ class DishListWireFrame: DishListWireFrameProtocol {
             
             vc.presenter = presenter
             
-            
-            //trả về kết quả
+            //return
             return vc
         }
         
         return nil
-        
         
     }
     

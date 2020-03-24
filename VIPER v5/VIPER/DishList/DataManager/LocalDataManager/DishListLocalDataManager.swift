@@ -12,12 +12,12 @@ class DishListLocalDataManager: DishListLocalDataManagerProtocol {
     func initDishList(id: Int) -> [Dish] {
         //
         var dishList = [Dish]()
-        //test only
+        //for test only
         let allDishDetail = DishData.generateDataList()
         for item in allDishDetail {
             dishList.append(Dish(attribute: item))
         }
-        //
+        
         //print (dishList)
         return dishList
     }

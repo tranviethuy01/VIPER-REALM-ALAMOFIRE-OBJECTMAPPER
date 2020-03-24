@@ -15,7 +15,6 @@ protocol DishDetailViewControllerProtocol: class {
     func startReloading()
     func endLoading()
     func updateView()
-    func endLoadMore()
-    
+    func endLoadMore()    
 
 }

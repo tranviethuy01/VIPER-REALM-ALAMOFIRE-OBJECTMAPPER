@@ -60,40 +60,26 @@ class DishDetailViewController: UIViewController {
         
         initView()
         
-        //tiến hành gọi presenter
         //gọi đến presenter
-               if let presenter = presenter {
-                   presenter.viewDidLoad()
-               }
+        if let presenter = presenter {
+            presenter.viewDidLoad()
+        }
         
     }
     
     func initView() {
     
-        print ("GKDEBUG >> initSubView()")
-        //tiến hành itit
-        print ("GKDEBUG >> presenter : \(presenter)")
-        
         let backButton = UIBarButtonItem()
         backButton.title = ""
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
 //        self.navigationController?.title = ViperDishDetailConfig().getNavigationTitle()
         self.navigationItem.title = ViperDishDetailConfig.navigationTitle
         print ("GKDEBUG >> ViperDishDetailConfig().getNavigationTitle() \(ViperDishDetailConfig.navigationTitle)")
-        
-        //self.navigationController.top
+                
         
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }
 
@@ -111,28 +97,18 @@ extension DishDetailViewController : DishDetailViewControllerProtocol {
     
     func updateView() {
         //do sth
-        print ("GKDEBUG >> view >> updateView() >> code : \(code) dishTitle: \(dishTitle)")
         
         titleLabel.text = self.dishTitle
         shopNameLabel.text = self.shopName
-        
+        //request
         Alamofire.request(self.avatar!).responseImage { response in
             debugPrint(response)
-
-            print(response.request)
-            print(response.response)
-            print(response.data)
-            debugPrint(response.result)
 
             if case .success(let image) = response.result {
                 print("image downloaded: \(image)")
                 self.avatarImageView.image = UIImage(data: response.data!, scale: 1)
             }
         }
-        
-//        Alamofire.request(.GET, "https://robohash.org/123.png").response { (request, response, data, error) in
-//            self.myImageView.image = UIImage(data: data, scale:1)
-//        }
         
         
     }
