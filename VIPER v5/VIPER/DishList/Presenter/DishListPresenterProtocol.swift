@@ -11,17 +11,14 @@ import RealmSwift
 
 protocol DishListPresenterProtocol: class {
 
-    //một vài biến
+    //property
     var view : DishListViewControllerProtocol? {get set}
     var interactor : DishListInteractorInputProtocol? {get set}
-    
     var wireFrame : DishListWireFrameProtocol? {get set}
-    
     var code : String! { get set }
-    
     var dishList : [Dish]! {get set}
-    //các func trong Presenter
     
+    //func
     // VIEW -> PRESENTER
     func viewDidLoad()
     

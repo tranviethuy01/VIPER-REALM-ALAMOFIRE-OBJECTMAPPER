@@ -15,24 +15,19 @@ import AlamofireImage
 class DishListViewController: ViewController {
     
     //mark property
-    
-    
     @IBOutlet weak var tableView: UITableView!
-    
-    
     var presenter : DishListPresenterProtocol?
-    
     var dishs : [Dish]! {
         get {
             return presenter?.dishList
         }
     }
     
+    //mark func
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+        //initview
         initView()
         
         //tiến hành gọi presenter ra xử lý
@@ -45,22 +40,19 @@ class DishListViewController: ViewController {
     func initView(){
     
         //setup
-        
         //back button
         let backButton = UIBarButtonItem()
         backButton.title = ""
     self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         //title
         self.navigationItem.title = DishListConfig.navigationTitle
-      
-        
+              
         //delegate
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = 100
         
         // một số thuộc tính khác
-        
     }
     
     
@@ -69,7 +61,6 @@ class DishListViewController: ViewController {
         return self
     }
     
-
 }
 
 extension DishListViewController : UITableViewDelegate, UITableViewDataSource {
@@ -84,18 +75,15 @@ extension DishListViewController : UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? DishCell  else {
             fatalError("The dequeued cell is not an instance of MealTableViewCell.")
         }
-        
-        
+                
         let dish = dishs[indexPath.row]
-        
-        
+                
         //cell
         cell.titleLabel.text = dish.title
         cell.shopNameLabel.text = dish.shopName
         
         Alamofire.request(dish.avatar!).responseImage { response in
             debugPrint(response)
-
 
             if case .success(let image) = response.result {
                 print("image downloaded: \(image)")
@@ -121,13 +109,9 @@ extension DishListViewController : UITableViewDelegate, UITableViewDataSource {
             //push
         self.navigationController?.pushViewController(vc, animated: true)
         }
-        
-        
-        
+                        
     }
-    
-    
-    
+           
 }
 
 extension DishListViewController : DishListViewControllerProtocol {
