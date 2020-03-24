@@ -86,6 +86,20 @@
                                     <action selector="bbtnDoAutoLayout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqF-aH-sQG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MQTT Client" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPN-VF-i65">
+                                <rect key="frame" x="10" y="505" width="404" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="934-ig-0cg">
+                                <rect key="frame" x="0.0" y="536" width="414" height="30"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="MQTT Client"/>
+                                <connections>
+                                    <action selector="btnDoMQTTClient:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M8e-rJ-vbq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -98,17 +112,23 @@
                             <constraint firstItem="CBS-J2-q8A" firstAttribute="top" secondItem="Qfy-bO-40j" secondAttribute="bottom" constant="20" id="F21-dD-Fi6"/>
                             <constraint firstItem="M1V-cm-dI4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="FSg-n3-JLp"/>
                             <constraint firstItem="aAR-Zy-eVG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="GP5-fy-Sk0"/>
+                            <constraint firstItem="qPN-VF-i65" firstAttribute="top" secondItem="3Pp-zl-DUU" secondAttribute="bottom" constant="20" id="GT2-VX-OnJ"/>
                             <constraint firstItem="d2h-A0-SRZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q9d-ua-OBj"/>
                             <constraint firstItem="zgo-eK-aZL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QcG-NV-H9F"/>
+                            <constraint firstItem="934-ig-0cg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qdf-3L-WsV"/>
                             <constraint firstItem="CBS-J2-q8A" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SdW-H5-1HV"/>
                             <constraint firstItem="d2h-A0-SRZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Sqf-fy-njz"/>
                             <constraint firstItem="zgo-eK-aZL" firstAttribute="top" secondItem="aAR-Zy-eVG" secondAttribute="bottom" constant="10" id="TEY-h1-Mwv"/>
+                            <constraint firstItem="qPN-VF-i65" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="U2B-Kl-SI3"/>
                             <constraint firstItem="Qfy-bO-40j" firstAttribute="top" secondItem="Qox-oj-QGD" secondAttribute="bottom" constant="10" id="Uis-oj-ukN"/>
                             <constraint firstItem="aAR-Zy-eVG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="WFn-Qx-DdA"/>
+                            <constraint firstItem="934-ig-0cg" firstAttribute="top" secondItem="qPN-VF-i65" secondAttribute="bottom" constant="10" id="YPJ-y1-E6v"/>
                             <constraint firstItem="Qfy-bO-40j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZIm-oc-vc2"/>
                             <constraint firstItem="Qox-oj-QGD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="bLJ-sW-qby"/>
                             <constraint firstItem="Qfy-bO-40j" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ben-Q3-f7s"/>
                             <constraint firstItem="8DR-jX-uzr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="brh-hq-4zv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qPN-VF-i65" secondAttribute="trailing" id="dB6-98-Yvv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="934-ig-0cg" secondAttribute="trailing" id="eEV-vD-Mzf"/>
                             <constraint firstItem="M1V-cm-dI4" firstAttribute="top" secondItem="zgo-eK-aZL" secondAttribute="bottom" constant="20" id="hmV-VC-znL"/>
                             <constraint firstItem="d2h-A0-SRZ" firstAttribute="top" secondItem="M1V-cm-dI4" secondAttribute="bottom" constant="10" id="iSe-wR-Lnh"/>
                             <constraint firstItem="Qox-oj-QGD" firstAttribute="top" secondItem="d2h-A0-SRZ" secondAttribute="bottom" constant="20" id="lPP-nM-W8H"/>
@@ -124,6 +144,7 @@
                     <connections>
                         <outlet property="btnAlamofireDemo" destination="Qfy-bO-40j" id="iQ8-nP-wNQ"/>
                         <outlet property="btnAutoLayout" destination="3Pp-zl-DUU" id="Yea-HO-nTZ"/>
+                        <outlet property="btnMQTTClient" destination="934-ig-0cg" id="d62-Al-K2c"/>
                         <outlet property="btnObjectMapper" destination="V8e-i9-dWJ" id="w4w-bU-FGt"/>
                         <outlet property="btnRealmDemo" destination="d2h-A0-SRZ" id="K0L-G2-L4r"/>
                         <outlet property="btnViperDemo" destination="zgo-eK-aZL" id="YUw-uY-eCi"/>
