@@ -10,19 +10,14 @@ import UIKit
 import RealmSwift
 
 class RealmDishDetailPresenter: NSObject,RealmDishDetailPresenterProtocol {
-    
+    //property
     var interactor: RealmDishDetailInteractorInputProtocol?
-    
     var dish: RealmDishModel!
-    
     var wireFrame: RealmDishDetailWireFrameProtocol?
-    
     var view: RealmDishDetailViewControllerProtocol?
-    
     var id: Int!
-    
     var didRegisterObserver  = false
-    
+    //func
     func viewDidLoad() {
         if let interactor = interactor {
                 
@@ -34,8 +29,7 @@ class RealmDishDetailPresenter: NSObject,RealmDishDetailPresenterProtocol {
                 //2
           if let view = view {
                     
-                    
-              //chủ động start Reloading
+              //start Reloading
               view.startReloading()
                 
           }
@@ -66,8 +60,7 @@ extension RealmDishDetailPresenter : RealmDishDetailInteractorOutputProtocol {
         
         if let interactor = interactor {
             
-           // print ("GKDEBUG >> Tiến hành interactor.registerChange ")
-            
+           //
             interactor.registerChange(dishDetail: self.dish)
         }
         

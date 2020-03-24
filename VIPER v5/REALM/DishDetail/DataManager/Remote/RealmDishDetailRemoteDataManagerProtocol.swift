@@ -12,7 +12,7 @@ protocol RealmDishDetailRemoteDataManagerInputProtocol: class {
 
     
     var remoteRequestHandler : RealmDishDetailRemoteDataManagerOutputProtocol? {get set}
-        //func reloadDishList(code: String)
+        //
         func reloadDishDetail(id: Int)
         
 }
@@ -20,8 +20,6 @@ protocol RealmDishDetailRemoteDataManagerInputProtocol: class {
 protocol RealmDishDetailRemoteDataManagerOutputProtocol: class {
         func reloadSuccess()
         func reloadFail()
-        
-        //
         func reloadDishListSuccess()
         func reloadDishListFail()
         func loadMoreSuccess()

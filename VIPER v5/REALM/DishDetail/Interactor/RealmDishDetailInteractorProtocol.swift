@@ -10,21 +10,15 @@ import UIKit
 import RealmSwift
 protocol RealmDishDetailInteractorInputProtocol: class {
 
-    
+    //
     var presenter : RealmDishDetailInteractorOutputProtocol? {get set}
-       
-        func initDishDetail(id: Int) //return nothing
-        func reloadDishDetail(id: Int)
-        
-        //
-        func registerChange(dishDetail: RealmDishModel)
-        
-
+    //func
+    func initDishDetail(id: Int) //return nothing
+    func reloadDishDetail(id: Int)
+    func registerChange(dishDetail: RealmDishModel)
 }
 
 protocol RealmDishDetailInteractorOutputProtocol: class {
-
         func didInitDishDetail(detail: RealmDishModel?)
         func didReceiveChange(dishDetailChange: ObjectChange)
-
 }

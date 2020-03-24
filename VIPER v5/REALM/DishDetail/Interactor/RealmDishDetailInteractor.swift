@@ -11,17 +11,13 @@ import RealmSwift
 
 class RealmDishDetailInteractor: RealmDishDetailInteractorInputProtocol {
     
-    
     //mark property
     var presenter: RealmDishDetailInteractorOutputProtocol?
-       
-       var localDataManager: RealmDishDetailLocalDataManagerProtocol?
-       
-       var remoteDataManager: RealmDishDetailRemoteDataManagerInputProtocol?
-       
-       var dishDetailNotificationToken: NotificationToken?
+    var localDataManager: RealmDishDetailLocalDataManagerProtocol?
+    var remoteDataManager: RealmDishDetailRemoteDataManagerInputProtocol?
+    var dishDetailNotificationToken: NotificationToken?
     
-    
+    //func
     func initDishDetail(id: Int) {
         if let presenter = presenter, let localDataManager = localDataManager {
            
@@ -36,24 +32,17 @@ class RealmDishDetailInteractor: RealmDishDetailInteractorInputProtocol {
     }
     
     func registerChange(dishDetail: RealmDishModel) {
-        //code
-//        print("GKDEBUG >> RealmDishDetailInteractor >> registerChange ")
-                
-            //register change
+        
+        //register change
         dishDetailNotificationToken = dishDetail.observe({  [weak self] (change) in
                     
-                    print("GKDEBUG >> registerChange >> dishList.observe >> changes")
-                    if let weakSelf = self, let presenter = weakSelf.presenter {
-       
-                        presenter.didReceiveChange(dishDetailChange: change)
-                    }
-                })
+            //
+            if let weakSelf = self, let presenter = weakSelf.presenter { presenter.didReceiveChange(dishDetailChange: change)
+            }
+        })
         
         
     }
-    
-
-    
 
 }
 

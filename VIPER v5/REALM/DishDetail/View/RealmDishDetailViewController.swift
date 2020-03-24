@@ -11,46 +11,38 @@ import Alamofire
 import AlamofireImage
 
 class RealmDishDetailViewController: UIViewController {
-
+    
+    //property
     var presenter: RealmDishDetailPresenterProtocol?
-    
     @IBOutlet weak var imageView: UIImageView!
-    
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var shopNameLabel: UILabel!
-    
     var dish : RealmDishModel? {
         get {
             return presenter?.dish
         }
     }
-    
-    
+    //func
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
+        //init
         initView()
             
             //giao tiếp tiếp với presenter
-            if let presenter = presenter {
-            
+        if let presenter = presenter {
                 presenter.viewDidLoad()
                 
                 //reloaddata
                 presenter.reloadData()
             }
-            
-            
         }
         
     func initView(){
             //back button
             let backButton = UIBarButtonItem()
             backButton.title = ""
-             self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
+           self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
             //title
              self.navigationItem.title = RealmDishDetailConfig.navigationTitle
         
@@ -78,13 +70,8 @@ extension RealmDishDetailViewController:  RealmDishDetailViewControllerProtocol{
         Alamofire.request(self.dish!.avatar!).responseImage { response in
             debugPrint(response)
 
-            print(response.request)
-            print(response.response)
-            print(response.data)
-            debugPrint(response.result)
-
             if case .success(let image) = response.result {
-                print("image downloaded: \(image)")
+                
                 self.imageView.image = UIImage(data:response.data!, scale: 1)
             }
         }

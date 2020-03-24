@@ -13,11 +13,7 @@ class RealmDishDetailConfig: NSObject {
     static let navigationTitle : String = "Chi tiết món ăn"
     static let storyBoardName : String = "RealmDishDetailStoryboard"
     static let storyBoardID : String = "RealmDishDetailStoryboardID"
-    
-    
-    //static let dishListURL : String = "https://driver.loship.vn/v5/shippers/me/orders/new"
     static let dishDetailURL : String = "https://tranhuy.bachkhoasaigon.com/test/api/dishdetail/"
-    
     
 
 }

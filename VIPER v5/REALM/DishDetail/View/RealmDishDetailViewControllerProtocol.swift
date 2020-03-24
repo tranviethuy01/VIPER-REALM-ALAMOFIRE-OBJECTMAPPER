@@ -10,10 +10,10 @@ import UIKit
 
 protocol RealmDishDetailViewControllerProtocol: class {
 
-    
+    //property
     var presenter : RealmDishDetailPresenterProtocol? {get set}
      
-        
+     //func
      func startReloading()
      func endLoading()
      func updateView()

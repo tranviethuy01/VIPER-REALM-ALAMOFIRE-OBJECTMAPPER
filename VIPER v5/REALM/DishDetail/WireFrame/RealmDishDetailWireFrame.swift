@@ -10,15 +10,13 @@ import UIKit
 
 class RealmDishDetailWireFrame: RealmDishDetailWireFrameProtocol {
     static func createRealmDishDetailViewController(id: Int) -> RealmDishDetailViewController? {
-        //do sth here
         
-        //chúng ta khởi tạo những biến đầu tiên ở đây
-        
+        //init
         let storyBoard = UIStoryboard(name: RealmDishDetailConfig.storyBoardName, bundle: nil)
         
         if let vc = storyBoard.instantiateViewController(withIdentifier: RealmDishDetailConfig.storyBoardID) as? RealmDishDetailViewController {
-        //bắt đầu khởi tạo cả đống thứ ở đây
             
+            //setup
             let presenter = RealmDishDetailPresenter()
             let interactor = RealmDishDetailInteractor()
             let wireFrame = RealmDishDetailWireFrame ()

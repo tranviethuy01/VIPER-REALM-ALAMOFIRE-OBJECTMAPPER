@@ -16,7 +16,4 @@ class RealmDishDetailLocalDataManager:  RealmDishDetailLocalDataManagerProtocol 
         let realm = try! Realm()
         return realm.object(ofType: RealmDishModel.self, forPrimaryKey: id)
     }
-    
-
-   
 }
