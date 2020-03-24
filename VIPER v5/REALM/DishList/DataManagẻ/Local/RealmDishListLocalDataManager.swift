@@ -13,11 +13,7 @@ class RealmDishListLocalDataManager: RealmDishListLocalDataManagerProtocol {
     func initDishList(id: Int) -> Results<RealmDishModel> {
         //do sth here
         
-        let realm = try! Realm()
-        //trả về phần tử đầu tiên
-//        return realm.objects(RealmDishModel.self).filter("code = %@", id).first
-        
-//        return realm.objects(RealmDishModel.self).filter("group = %@", "eatery\(id)").sorted(byKeyPath: "orderNumber")
+        let realm = try! Realm()        
         return realm.objects(RealmDishModel.self)
         
     }

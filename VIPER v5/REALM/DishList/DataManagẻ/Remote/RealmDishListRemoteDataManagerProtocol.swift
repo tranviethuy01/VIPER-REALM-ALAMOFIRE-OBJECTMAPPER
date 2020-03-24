@@ -12,14 +12,6 @@ protocol RealmDishListRemoteDataManagerInputProtocol: class {
     var remoteRequestHandler : RealmDishListRemoteDataManagerOutputProtocol? {get set}
     //func reloadDishList(code: String)
     func reloadDishList(id: Int)
-    //func initDishList(id: Int) -> Results<RealmDishModel>?
-    //func reloadCampaign(id: Int)
-    
-//    var remoteRequestHandler: EateryPromotionListRemoteDataManagerOutputProtocol? {get set}
-//    func getEateryInfo(eateryId: Int, superCategory: Int)
-//    func reloadPromotionList(eateryId: Int)
-//    func reloadCampaignList(eateryId: Int)
-//    func loadMore()
     
 }
 
@@ -36,18 +28,3 @@ protocol RealmDishListRemoteDataManagerOutputProtocol: class {
     func loadMoreFail()
     
 }
-
-//
-//
-//
-//protocol PromotionDetailRemoteDataManagerInputProtocol: class {
-//    var remoteRequestHandler: PromotionDetailRemoteDataManagerOutputProtocol? {get set}
-//    func reloadPromotion(_ code: String)
-//    func reloadCampaign(id: Int)
-//}
-//
-//protocol PromotionDetailRemoteDataManagerOutputProtocol: class {
-//    func reloadSuccess()
-//    func reloadFail()
-//}
-//

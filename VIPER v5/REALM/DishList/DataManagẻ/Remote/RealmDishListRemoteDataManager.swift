@@ -48,10 +48,10 @@ class RealmDishListRemoteDataManager: RealmDishListRemoteDataManagerInputProtoco
                         
                 }
                     
-                let allItem = realm.objects(RealmDishModel.self)
-                
-                print("GKDEBUG >> reloadDishList(id: Int) >> allItem : \(allItem.count)")
-                print (allItem)
+//                let allItem = realm.objects(RealmDishModel.self)
+//
+//                print("GKDEBUG >> reloadDishList(id: Int) >> allItem : \(allItem.count)")
+//                print (allItem)
                 
                     //zzzz
 //                    let id : Int = 1113
@@ -89,22 +89,17 @@ class RealmDishListRemoteDataManager: RealmDishListRemoteDataManagerInputProtoco
 
         Alamofire.request(url, headers: headers).responseJSON { response in
             //
-            print ("GKDEBUG >> Gía trị trả về \(response)")
-            debugPrint(response)
             
             switch response.result {
             case .success:
-                //thành công, xử lý
-                print ("GKDBUG >> Thành công reloadDishList")
-                print (response)
+                //thành công
                 let realm = try! Realm()
                 
-                let dish = RealmDishModel(JSONString: "cai ten nao do")
+                let dish = RealmDishModel(JSONString: "sth")
                 
                 try! realm.write {
                     realm.add(dish!)
                 }
-                
                 
                 
             case let .failure(error):

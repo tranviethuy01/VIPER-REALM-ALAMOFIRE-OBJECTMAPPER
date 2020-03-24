@@ -33,18 +33,12 @@ class RealmDishListPresenter: NSObject, RealmDishListPresenterProtocol {
         if let interactor = interactor {
         
             //init from local
-            interactor.initDishList(id: 111)
-            
-//            addObserver(self, forKeyPath: #keyPath(requestBuilder.promotion), options: [.new], context: nil)
-//            NotificationCenter.default.addObserver(self, forKeyPath: "", options: [], context: nil)
-//            addObserver(self, forKeyPath: #keyPath(requestBuilder.promotion), options: [.new], context: nil)
-//            addObserver(self, forKeyPath: #keyPath(dishList), options: [.new], context: nil)
+            interactor.initDishList(id: 111)           
             didRegisterObserver = true
         }
         
         //2
         if let view = view {
-            
             
             //chủ động start Reloading
             view.startReloading()
@@ -70,10 +64,10 @@ class RealmDishListPresenter: NSObject, RealmDishListPresenterProtocol {
 extension RealmDishListPresenter : RealmDishListInteractorOutputProtocol {
     func didReceiveChange(dishListChange: RealmCollectionChange<Results<RealmDishModel>>) {
         //
-        print ("GKDEBUG >> RealmDishListPresenter >> didReceiveChange")
+        
        if let view = view {
-            print ("GKDEBUG >> RealmDishListPresenter >> didReceiveChange >> view.updateView")
-                view.updateView()
+            //update view
+            view.updateView()
        }
        
     }
@@ -85,8 +79,7 @@ extension RealmDishListPresenter : RealmDishListInteractorOutputProtocol {
         
         if let interactor = interactor {
             
-            print ("GKDEBUG >> Tiến hành interactor.registerChange ")
-            
+           //
             interactor.registerChange(dishList: self.dishList)
         }
         

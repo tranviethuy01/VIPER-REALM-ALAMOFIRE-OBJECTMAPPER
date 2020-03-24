@@ -25,27 +25,18 @@ class RealmDishListInteractor: RealmDishListInteractorInputProtocol {
     //mark func
     func registerChange(dishList: Results<RealmDishModel>) {
         
-        print("GKDEBUG >> RealmDishListInteractor >> registerChange ")
-        
+        //
         //register change
         dishListNotificationToken = dishList.observe({[weak self] (changes) in
             
             print("GKDEBUG >> registerChange >> dishList.observe >> changes")
             if let weakSelf = self, let presenter = weakSelf.presenter {
-//                presenter.didReceiveChange(campaignListChange: changes)
-                print("GKDEBUG >> registerChange >> dishList.observe >> changes >> tiến hành gọi presenter thực hiện update view")
+                //
                 presenter.didReceiveChange(dishListChange: changes)
             }
         })
         
     }
-    
-    
-    
-    
-   
-    
-    
     
     func initDishList(id : Int) {
         //do sth here
@@ -64,7 +55,6 @@ class RealmDishListInteractor: RealmDishListInteractorInputProtocol {
         //tiến hành gọi xuống datamanager và lấy dữ liệu
         if let remoteDataManager = remoteDataManager {
             //lấy dữ liệu remote
-            print("GKDEBUG >> Gọi xuống remoteDataManager")
             remoteDataManager.reloadDishList(id: 111)
         }
     }

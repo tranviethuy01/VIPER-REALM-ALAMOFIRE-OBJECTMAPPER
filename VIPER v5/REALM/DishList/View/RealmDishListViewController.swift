@@ -94,12 +94,7 @@ extension RealmDishListViewController : UITableViewDataSource, UITableViewDelega
         
         Alamofire.request(dish.avatar!).responseImage { response in
             debugPrint(response)
-
-            print(response.request)
-            print(response.response)
-            print(response.data)
-            debugPrint(response.result)
-
+                        
             if case .success(let image) = response.result {
                 print("image downloaded: \(image)")
                 cell.avatarImage.image = UIImage(data: response.data!, scale: 1)

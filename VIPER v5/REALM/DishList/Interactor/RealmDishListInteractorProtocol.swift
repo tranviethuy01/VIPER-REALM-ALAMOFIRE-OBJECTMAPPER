@@ -14,8 +14,7 @@ protocol RealmDishListInteractorInputProtocol: class {
     var presenter : RealmDishListInteractorOutputProtocol? {get set}
    
     func initDishList(id: Int) //return nothing
-    func reloadDishList(id: Int)
-    
+    func reloadDishList(id: Int)    
     //
     func registerChange(dishList: Results<RealmDishModel>)
     
