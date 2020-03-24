@@ -75,12 +75,9 @@ class RealmDishListRemoteDataManager: RealmDishListRemoteDataManagerInputProtoco
     
     func reloadDishList(code: String) {
         //do sth here to get data
-        //la la la
-        
-        //tiến hành lấy dữ liệu ở đây nhé ku
-        
-        //let url = RealmDishListConfig.dishListURL
-        let url = "https://tranhuy.bachkhoasaigon.com/test/api/dishlist/"
+        //get data
+        let url = RealmDishListConfig.dishListURL
+//
         let accessToken = RealmDishListConfig.accessToken
         let headers: HTTPHeaders = [
             "X-Access-Token": accessToken,
@@ -92,18 +89,16 @@ class RealmDishListRemoteDataManager: RealmDishListRemoteDataManagerInputProtoco
             
             switch response.result {
             case .success:
-                //thành công
+                //success
                 let realm = try! Realm()
-                
                 let dish = RealmDishModel(JSONString: "sth")
-                
                 try! realm.write {
                     realm.add(dish!)
                 }
                 
                 
             case let .failure(error):
-                print ("GKDBUG >> Lỗi rồi")
+                print ("GKDBUG >> error: \(error)")
             }
             
             
