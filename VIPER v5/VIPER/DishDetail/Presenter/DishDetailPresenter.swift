@@ -53,12 +53,7 @@ class DishDetailPresenter: DishDetailPresenterProtocol {
 
 extension DishDetailPresenter : DishDetailInteractorOutputProtocol {
     func didInitDishDetail() {
-        //đã hoàn thành lấy dữ liệu
-        //test thử vài giá trị nhé
-        
-        print ("GKDEBUG >>DishDetailPresenter >> didInitDishDetail()")
-        
-        print ("GKDEBUG >> didInitDishDetail() >> self.code: \(self.code)  self.avatar : \(self.avatar) self.title \(self.title) self.shopName \(self.shopName)")
+        //do sth
     }
     
 

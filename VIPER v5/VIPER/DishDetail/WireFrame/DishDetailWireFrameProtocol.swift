@@ -10,7 +10,7 @@ import UIKit
 
 protocol DishDetailWireFrameProtocol: class {
 
-    //main function
+    //init
     static func createDishDetailViewController (code : String, avatar : String, title : String , shopName : String) -> DishDetailViewController?
 
 }

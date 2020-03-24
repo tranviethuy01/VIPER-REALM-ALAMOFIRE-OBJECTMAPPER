@@ -13,19 +13,4 @@ class ViperDishDetailConfig: NSObject {
     static let navigationTitle : String = "Chi tiết món ăn"
     static let storyBoardName : String = "DishDetail"
     static let storyBoardID : String = "DishDetailID"
-//    
-//    func getNavigationTitle() -> String {
-//    
-//        return "Chi tiết món ăn"
-//    }
-//
-//    func getStoryBoardName () -> String {
-//    
-//        return "DishDetail"
-//    }
-//
-//    func getStoryBoardID () -> String {
-//    
-//        return "DishDetailID"
-//    }
 }

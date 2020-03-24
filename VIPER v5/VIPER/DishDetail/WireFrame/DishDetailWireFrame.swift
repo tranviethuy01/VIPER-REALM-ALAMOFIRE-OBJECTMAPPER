@@ -19,14 +19,11 @@ class DishDetailWireFrame: DishDetailWireFrameProtocol {
         print (storyBoard)
         if let vc = storyBoard.instantiateViewController(withIdentifier: "DishDetailID") as? DishDetailViewController {
         
-            print ("GKDEBUG >> Vào bên trong VC, tiến hành setup")
-            print ("GKDEBUG >> vc \(vc)")
             //property
             let presenter = DishDetailPresenter()
             let interactor = DishDetailInteractor()
             let wireFrame = DishDetailWireFrame()
-            
-            
+                        
             //setup presenter
             presenter.interactor = interactor
             presenter.wireFrame = wireFrame
@@ -35,8 +32,6 @@ class DishDetailWireFrame: DishDetailWireFrameProtocol {
             presenter.avatar = avatar
             presenter.title = title
             presenter.shopName = shopName
-            
-            print ("GKDEBUG >> DishDetailWireFrame >> presenter: \(presenter)")
             
             //setup interactor
             interactor.presenter = presenter

@@ -10,22 +10,15 @@ import UIKit
 
 class DishDetailInteractor: DishDetailInteractorInputProtocol {
     
-    
+    //property
     var presenter: DishDetailInteractorOutputProtocol?
     
-    
-    
-    
+    //func
     func initDishDetail() {
-        //tiến hành lấy thông tin
         
-        //gọi lại presenter lấy thông tin ??? sai mợ nó rồi
         if let presenter = presenter {
-            
             presenter.didInitDishDetail()
         }
     }
-    
-    
    
 }

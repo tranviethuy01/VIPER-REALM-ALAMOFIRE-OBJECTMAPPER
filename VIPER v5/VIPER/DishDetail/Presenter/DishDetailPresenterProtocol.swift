@@ -10,7 +10,7 @@ import UIKit
 
 protocol DishDetailPresenterProtocol: class {
 
-    //basic
+    //basic property
     var view : DishDetailViewControllerProtocol? {get set}
     var interactor : DishDetailInteractorInputProtocol? {get set}
     var wireFrame : DishDetailWireFrameProtocol? {get set}
@@ -20,6 +20,6 @@ protocol DishDetailPresenterProtocol: class {
     var avatar : String! {get set}
     var title : String! {get set}
     var shopName : String! {get set}
-    
+    //func
     func viewDidLoad()
 }

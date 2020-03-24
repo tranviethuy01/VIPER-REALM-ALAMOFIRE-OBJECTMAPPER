@@ -9,9 +9,9 @@
 import UIKit
 
 protocol DishDetailInteractorInputProtocol: class {
-
+    //property
     var presenter : DishDetailInteractorOutputProtocol? {get set}
-    
+    //func
     func initDishDetail()
 
 }
