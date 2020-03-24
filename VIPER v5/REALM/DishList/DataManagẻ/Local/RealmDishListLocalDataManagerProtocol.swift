@@ -10,7 +10,7 @@
 import UIKit
 import RealmSwift
 protocol RealmDishListLocalDataManagerProtocol: class {
-
+    //func
     func initDishList(id : Int) -> Results<RealmDishModel>
     
 }

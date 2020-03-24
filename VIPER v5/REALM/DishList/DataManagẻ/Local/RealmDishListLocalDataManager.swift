@@ -11,8 +11,7 @@ import RealmSwift
 
 class RealmDishListLocalDataManager: RealmDishListLocalDataManagerProtocol {
     func initDishList(id: Int) -> Results<RealmDishModel> {
-        //do sth here
-        
+        //do sth here        
         let realm = try! Realm()        
         return realm.objects(RealmDishModel.self)
         

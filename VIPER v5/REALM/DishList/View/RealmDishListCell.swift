@@ -10,12 +10,9 @@ import UIKit
 
 class RealmDishListCell: UITableViewCell {
 
-    //MARK PROPERTY
-    
+    //MARK PROPERTY    
     @IBOutlet weak var avatarImage: UIImageView!
-    
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var shopNameLabel: UILabel!
     
 

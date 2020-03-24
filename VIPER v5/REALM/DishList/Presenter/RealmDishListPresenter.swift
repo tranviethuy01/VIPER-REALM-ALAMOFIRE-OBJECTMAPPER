@@ -23,8 +23,7 @@ class RealmDishListPresenter: NSObject, RealmDishListPresenterProtocol {
     
     //mark function
     func viewDidLoad() {
-        //tiến hành gọi xuống interactor
-        print ("RealmDishListPresenter >> viewDidLoad()")
+        
         /*
         1 lấy dữ liệu
         2 hiển thị
@@ -39,32 +38,27 @@ class RealmDishListPresenter: NSObject, RealmDishListPresenterProtocol {
         
         //2
         if let view = view {
-            
-            //chủ động start Reloading
+            //start Reloading
             view.startReloading()
         
         }
         
     }
     
-
-    
     func reloadData() {
         //tiến hành reloadData
         if let interactor = interactor {
-            
-            print("GKDEBUG >> Gọi xuống interactor")
+            //
             interactor.reloadDishList(id: 111)
         }
     }
     
-
 }
 
 extension RealmDishListPresenter : RealmDishListInteractorOutputProtocol {
     func didReceiveChange(dishListChange: RealmCollectionChange<Results<RealmDishModel>>) {
-        //
         
+       //
        if let view = view {
             //update view
             view.updateView()
@@ -76,9 +70,7 @@ extension RealmDishListPresenter : RealmDishListInteractorOutputProtocol {
     func didInitDishList(list: Results<RealmDishModel>?) {
         
         self.dishList = list
-        
         if let interactor = interactor {
-            
            //
             interactor.registerChange(dishList: self.dishList)
         }
@@ -86,10 +78,7 @@ extension RealmDishListPresenter : RealmDishListInteractorOutputProtocol {
         if let view = view{
             view.updateView()
         }
-        
-//
-        
-        
+         
         
     }
     

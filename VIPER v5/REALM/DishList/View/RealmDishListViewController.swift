@@ -15,10 +15,6 @@ import RealmSwift
 
 class RealmDishListViewController: ViewController {
 
-    
-    @IBOutlet weak var tableView: UITableView!
-    
-    
     //mark property
     var presenter : RealmDishListPresenterProtocol?
     
@@ -27,21 +23,16 @@ class RealmDishListViewController: ViewController {
             return presenter?.dishList
         }
     }
-    
-    
+    @IBOutlet weak var tableView: UITableView!
+        
+    //func
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //zzzz
-        print ("GKDEBUG >> RealmDishListViewController >> viewDidLoad()")
-        
-        // Do any additional setup after loading the view.
-        
+        //init view
         initView()
-        
-        //giao tiếp tiếp với presenter
+        //presenter
         if let presenter = presenter {
-        
             presenter.viewDidLoad()
         }
         
@@ -62,23 +53,21 @@ class RealmDishListViewController: ViewController {
         //refresh header
         tableView.addRefreshHeader {
             [weak self] in
-                //zzzz
+                //
             if let weakSelf = self, let presenter = weakSelf.presenter {
-               //zzzz
-                
+               //
                 presenter.reloadData()
             }
             
         }
     }
-
     
 
 }
 
 extension RealmDishListViewController : UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 0
+
         return dishs!.count
     }
     
@@ -107,27 +96,12 @@ extension RealmDishListViewController : UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             
-         print("GKDEBUG >> thực hiện func tableView didSelectRowAt indexPath")
+         
         let id : Int = dishs![indexPath.row].id
         if let vc = RealmDishDetailWireFrame.createRealmDishDetailViewController(id: id) {
             
              self.navigationController?.pushViewController(vc, animated: true)
         }
-        
-         //tiến hành chuyển sang view DishDetail
-//         let code : String = "testonly"
-//        let avatar : String = dishs![indexPath.row].avatar
-//        let title : String = dishs![indexPath.row].title
-//         let shopName : String = dishs[indexPath.row].shopName
-           /*
-         if let vc = DishDetailWireFrame.createDishDetailViewController(code: code, avatar: avatar, title: title, shopName: shopName) {
-            
-                //ssself.title  = "Back K"
-                //self.navigationController?.pushViewController(vc, animated: true)
-                self.navigationController?.pushViewController(vc, animated: true)
-        }
-            
-        */
           
    }
     

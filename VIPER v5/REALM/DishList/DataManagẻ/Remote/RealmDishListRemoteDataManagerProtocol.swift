@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 protocol RealmDishListRemoteDataManagerInputProtocol: class {
     var remoteRequestHandler : RealmDishListRemoteDataManagerOutputProtocol? {get set}
-    //func reloadDishList(code: String)
+    //func 
     func reloadDishList(id: Int)
     
 }
@@ -19,11 +19,8 @@ protocol RealmDishListRemoteDataManagerInputProtocol: class {
 protocol RealmDishListRemoteDataManagerOutputProtocol: class {
     func reloadSuccess()
     func reloadFail()
-    
     func reloadDishListSuccess()
     func reloadDishListFail()
-    //func reloadSuccess()
-    //func reloadFail()
     func loadMoreSuccess()
     func loadMoreFail()
     

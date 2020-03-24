@@ -10,15 +10,14 @@ import UIKit
 
 class RealmDishListWireFrame: RealmDishListWireFrameProtocol {
     static func createRealmDishListViewController(code: String) -> RealmDishListViewController? {
-        //stub
-        //init here
-        //chúng ta khởi tạo những biến đầu tiên ở đây
         
+        //stub
+        //init        
         let storyBoard = UIStoryboard(name: RealmDishListConfig.storyBoardName, bundle: nil)
         
         if let vc = storyBoard.instantiateViewController(withIdentifier: RealmDishListConfig.storyBoardID) as? RealmDishListViewController {
-        //bắt đầu khởi tạo cả đống thứ ở đây
             
+            //
             let presenter = RealmDishListPresenter()
             let interactor = RealmDishListInteractor()
             let wireFrame = RealmDishListWireFrame ()

@@ -14,13 +14,11 @@ import Alamofire
 //import SwiftyJSON
 
 class RealmDishListRemoteDataManager: RealmDishListRemoteDataManagerInputProtocol {
-    
-    
+    //property
     var remoteRequestHandler: RealmDishListRemoteDataManagerOutputProtocol?
-    
+    //func
     func reloadDishList(id: Int) {
         //code lấy dữ liệu remote
-        print ("GKDEBUG >> RealmDishListRemoteDataManager >> initDishList")
         let url = RealmDishListConfig.dishListURL
         let accessToken = RealmDishListConfig.accessToken
         let headers: HTTPHeaders = [
@@ -30,8 +28,7 @@ class RealmDishListRemoteDataManager: RealmDishListRemoteDataManagerInputProtoco
         //        let headers = [
         //            "Content-Type" : "application/json; charset=utf-8"
         //        ];
-                    
-       
+        
         Alamofire.request(url, method: .get, headers: headers).responseJSON{ response in
              
              switch response.result {
@@ -48,29 +45,12 @@ class RealmDishListRemoteDataManager: RealmDishListRemoteDataManagerInputProtoco
                         
                 }
                     
-//                let allItem = realm.objects(RealmDishModel.self)
-//
-//                print("GKDEBUG >> reloadDishList(id: Int) >> allItem : \(allItem.count)")
-//                print (allItem)
-                
-                    //zzzz
-//                    let id : Int = 1113
-//                    let localItem = realm.object(ofType: RealmDishModel.self, forPrimaryKey: id)
-//
-//                    let allItem = realm.objects(RealmDishModel.self)
-                    
-                    
-                    
                 case let .failure(error):
                     print (error)
                 }
                            
-                           
-                }                
-      
-        
+            }
     }
-    
     
     
     func reloadDishList(code: String) {

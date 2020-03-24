@@ -11,13 +11,12 @@ import UIKit
 class DishDetailWireFrame: DishDetailWireFrameProtocol {
     
     static func createDishDetailViewController(code: String, avatar: String, title: String, shopName: String) -> DishDetailViewController? {
-        // do sth here
-        print ("GKDEBUG >> DishDetailWireFrame >> createDishDetailViewController")
-        print ("GKDEBUG >> Tại đây chúng ta bắt đầu khởi tạo các biến cơ bản để hiển thị")
-        print ("GKDEBUG >> các giá trị được truyền vào code: \(code) avatar: \(avatar) title: \(title) shopName: \(shopName)")
-        let storyBoard = UIStoryboard(name: "DishDetail", bundle: nil)
-        print (storyBoard)
-        if let vc = storyBoard.instantiateViewController(withIdentifier: "DishDetailID") as? DishDetailViewController {
+        
+        // code
+        
+        let storyBoard = UIStoryboard(name: ViperDishDetailConfig.storyBoardName, bundle: nil)
+        //print (storyBoard)
+        if let vc = storyBoard.instantiateViewController(withIdentifier: ViperDishDetailConfig.storyBoardID) as? DishDetailViewController {
         
             //property
             let presenter = DishDetailPresenter()
@@ -39,11 +38,9 @@ class DishDetailWireFrame: DishDetailWireFrameProtocol {
             
             vc.presenter = presenter
             
-            //setup
-            
+            //return
             return vc
         }
-        
         
         return nil
         

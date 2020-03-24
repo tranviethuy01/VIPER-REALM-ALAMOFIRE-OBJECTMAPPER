@@ -10,17 +10,13 @@ import UIKit
 
 protocol RealmDishListViewControllerProtocol: class {
 
+    //property
     var presenter : RealmDishListPresenterProtocol? {get set}
-    //
-//    func showDish(with dishs : [Dish])
-//    func showDishs(with dishs: [Dish])
     
+    //func
     func startReloading()
     func endLoading()
     func updateView()
     func endLoadMore()
-    
-
-    
 
 }

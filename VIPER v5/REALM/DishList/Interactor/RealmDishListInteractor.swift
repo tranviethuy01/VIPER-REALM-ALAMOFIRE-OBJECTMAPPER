@@ -12,20 +12,15 @@ import RealmSwift
 
 class RealmDishListInteractor: RealmDishListInteractorInputProtocol {
     
-   
     //mark property
     weak var presenter: RealmDishListInteractorOutputProtocol?
-       
-       var localDataManager: RealmDishListLocalDataManagerProtocol?
-       
-       var remoteDataManager: RealmDishListRemoteDataManagerInputProtocol?
-       
-       var dishListNotificationToken: NotificationToken?
+    var localDataManager: RealmDishListLocalDataManagerProtocol?
+    var remoteDataManager: RealmDishListRemoteDataManagerInputProtocol?
+    var dishListNotificationToken: NotificationToken?
     
     //mark func
     func registerChange(dishList: Results<RealmDishModel>) {
         
-        //
         //register change
         dishListNotificationToken = dishList.observe({[weak self] (changes) in
             
