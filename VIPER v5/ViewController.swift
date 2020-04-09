@@ -155,6 +155,15 @@ class ViewController: UIViewController {
         
     }
     
+    func pushTestScene(){
+            
+            let storyboard = UIStoryboard(name: "TestScene", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "TestSceneID")
+             //self.present(controller, animated: true, completion:        nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }
+    
     
     
     class func initWithStoryBoard() ->ViewController? {

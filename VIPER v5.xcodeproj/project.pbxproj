@@ -83,6 +83,9 @@
 		0DDF03552428795B0054BEDF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF03542428795B0054BEDF /* Constant.swift */; };
 		0DDF0357242879C30054BEDF /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF0356242879C30054BEDF /* Config.swift */; };
 		0DDF03592428A1300054BEDF /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDF03582428A1300054BEDF /* UIScrollView.swift */; };
+		0DE543D3243ED44C00031DEC /* TestScene.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE543D0243ED44C00031DEC /* TestScene.storyboard */; };
+		0DE543D4243ED44C00031DEC /* TestSceneConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE543D1243ED44C00031DEC /* TestSceneConfig.swift */; };
+		0DE543D5243ED44C00031DEC /* TestSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE543D2243ED44C00031DEC /* TestSceneViewController.swift */; };
 		0DEE25EC24274FC60065939B /* ObjectMapperDishListRemoteDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE25EB24274FC60065939B /* ObjectMapperDishListRemoteDataManagerProtocol.swift */; };
 		0DEE25EE24274FD10065939B /* ObjectMapperDishListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE25ED24274FD10065939B /* ObjectMapperDishListRemoteDataManager.swift */; };
 		0DEE25F024275A040065939B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEE25EF24275A040065939B /* String.swift */; };
@@ -213,6 +216,9 @@
 		0DDF03542428795B0054BEDF /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		0DDF0356242879C30054BEDF /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		0DDF03582428A1300054BEDF /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		0DE543D0243ED44C00031DEC /* TestScene.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestScene.storyboard; sourceTree = "<group>"; };
+		0DE543D1243ED44C00031DEC /* TestSceneConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSceneConfig.swift; sourceTree = "<group>"; };
+		0DE543D2243ED44C00031DEC /* TestSceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSceneViewController.swift; sourceTree = "<group>"; };
 		0DEE25EB24274FC60065939B /* ObjectMapperDishListRemoteDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperDishListRemoteDataManagerProtocol.swift; sourceTree = "<group>"; };
 		0DEE25ED24274FD10065939B /* ObjectMapperDishListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapperDishListRemoteDataManager.swift; sourceTree = "<group>"; };
 		0DEE25EF24275A040065939B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -963,6 +969,24 @@
 			path = Config;
 			sourceTree = "<group>";
 		};
+		0DE543CE243ED44C00031DEC /* testscene */ = {
+			isa = PBXGroup;
+			children = (
+				0DE543CF243ED44C00031DEC /* View */,
+			);
+			path = testscene;
+			sourceTree = "<group>";
+		};
+		0DE543CF243ED44C00031DEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DE543D0243ED44C00031DEC /* TestScene.storyboard */,
+				0DE543D1243ED44C00031DEC /* TestSceneConfig.swift */,
+				0DE543D2243ED44C00031DEC /* TestSceneViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0DE8FDAA242363BB00AAE092 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -1092,6 +1116,7 @@
 		841E9D37241C74A800225EBC /* VIPER v5 */ = {
 			isa = PBXGroup;
 			children = (
+				0DE543CE243ED44C00031DEC /* testscene */,
 				0D44D12E243DB37C008BEAAC /* ViewLifeCircle */,
 				0DDF03532428794D0054BEDF /* Config */,
 				0DAECEC32425D5AB00951949 /* Extension */,
@@ -1618,6 +1643,7 @@
 				841E9D3E241C74A800225EBC /* Main.storyboard in Resources */,
 				84C5FFDE2420A5CF00DDEB8A /* RealmDishListStoryboard.storyboard in Resources */,
 				0DD879B82421CB5F0063925B /* AlamofireDishListStoryboard.storyboard in Resources */,
+				0DE543D3243ED44C00031DEC /* TestScene.storyboard in Resources */,
 				0DCC4CAB242DED3D0051008B /* Codable2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1799,6 +1825,7 @@
 				0DC8FD85243349F200AA819C /* AlertViewController.swift in Sources */,
 				0D457DAE242468E900762A0E /* RealmDishDetailRemoteDataManager.swift in Sources */,
 				0D9D2D4A2423ADE100DF7F4E /* RealmDishListInteractorProtocol.swift in Sources */,
+				0DE543D5243ED44C00031DEC /* TestSceneViewController.swift in Sources */,
 				0DFA20B4242624B20081CBF0 /* ObjectMapperDishModel.swift in Sources */,
 				0D9D2D402423AD8200DF7F4E /* RealmDishListViewControllerProtocol.swift in Sources */,
 				0D457DB824246F9000762A0E /* AlamofireDishListPresenterProtocol.swift in Sources */,
@@ -1808,6 +1835,7 @@
 				0D457DA32424687500762A0E /* RealmDishDetailInteractor.swift in Sources */,
 				0D457DC82424703100762A0E /* AlamofireDishListLocalDataManagerProtocol.swift in Sources */,
 				0DCC4CA7242DA6150051008B /* Utils.swift in Sources */,
+				0DE543D4243ED44C00031DEC /* TestSceneConfig.swift in Sources */,
 				0D457DB624246F7400762A0E /* AlamofireDishListPresenter.swift in Sources */,
 				0D9D2D462423ADC000DF7F4E /* RealmDishListPresenterProtocol.swift in Sources */,
 				0DD879BA2421CB920063925B /* AlamofireDishListViewController.swift in Sources */,
