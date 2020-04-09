@@ -20,6 +20,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnMQTTClient: UIButton!
     
     
+    @IBOutlet weak var viewLifeCircleButton: UIButton!
+    
+    
     //MARK FUNCTION
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +37,15 @@ class ViewController: UIViewController {
     func initSubView(){
         //init view here
         self.title = " iOS Practice"
+        
+        
+        
+       
+        
+    }
     
+    func returnNil() -> [String]? {
+        return nil
     }
     
     @IBAction func btnDoViperDemo(_ sender: Any) {
@@ -72,6 +83,11 @@ class ViewController: UIViewController {
         pushMQTTClientScene()
     }
     
+    @IBAction func viewLifeCircleButton(_ sender: Any) {
+        
+        pushViewLifeCircleScene()
+        
+    }
     
     
     /* viết các hàm tiến hành hiển thị view */
@@ -130,6 +146,16 @@ class ViewController: UIViewController {
     
     }
     
+    func pushViewLifeCircleScene(){
+        //
+        let storyboard = UIStoryboard(name: "ViewLifeCircle", bundle: nil)
+         let vc = storyboard.instantiateViewController(withIdentifier: "ViewLifeCircleID")
+         //self.present(controller, animated: true, completion:        nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
     
     class func initWithStoryBoard() ->ViewController? {
     
@@ -148,14 +174,13 @@ class ViewController: UIViewController {
  }
  */
 
-
-class SecondViewController : UINavigationController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.backgroundColor = .yellow
-    }
-
-
-}
+//
+//class SecondViewController : UINavigationController {
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        view.backgroundColor = .yellow
+//    }
+//
+//}

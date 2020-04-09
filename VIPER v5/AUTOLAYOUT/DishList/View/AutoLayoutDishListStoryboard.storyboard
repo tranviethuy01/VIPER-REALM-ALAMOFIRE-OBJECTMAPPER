@@ -17,24 +17,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AutoLayout Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E8f-nx-i6o">
-                                <rect key="frame" x="0.0" y="443" width="414" height="20.5"/>
+                                <rect key="frame" x="10" y="54" width="137" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qb3-b7-maP">
+                                <rect key="frame" x="10" y="174.5" width="120" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Left Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGm-dh-cXh">
+                                <rect key="frame" x="224" y="94" width="120" height="30"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XQc-dY-IHH"/>
+                                </constraints>
+                                <state key="normal" title="Right Button"/>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7OW-ZU-51f">
+                                <rect key="frame" x="20" y="134.5" width="140" height="127"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="fod-yx-UPw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bf1-sI-fYQ">
+                                <rect key="frame" x="211" y="134.5" width="164" height="127"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="6ZT-bH-tol"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="E8f-nx-i6o" firstAttribute="centerX" secondItem="sMR-iM-JaZ" secondAttribute="centerX" id="LcX-u3-YsG"/>
-                            <constraint firstItem="E8f-nx-i6o" firstAttribute="centerY" secondItem="sMR-iM-JaZ" secondAttribute="centerY" id="Mey-Ns-Ae4"/>
-                            <constraint firstItem="sMR-iM-JaZ" firstAttribute="trailing" secondItem="E8f-nx-i6o" secondAttribute="trailing" id="y8g-Rd-31Z"/>
+                            <constraint firstItem="E8f-nx-i6o" firstAttribute="leading" secondItem="sMR-iM-JaZ" secondAttribute="leading" constant="10" id="6iE-Bz-R61"/>
+                            <constraint firstItem="E8f-nx-i6o" firstAttribute="top" secondItem="sMR-iM-JaZ" secondAttribute="top" constant="10" id="lGI-EW-y0p"/>
+                            <constraint firstItem="Qb3-b7-maP" firstAttribute="leading" secondItem="7OW-ZU-51f" secondAttribute="leading" id="oqb-sN-15J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sMR-iM-JaZ"/>
                     </view>
+                    <connections>
+                        <outlet property="autoLayoutLabel" destination="E8f-nx-i6o" id="xng-v8-U8n"/>
+                        <outlet property="greenView" destination="Bf1-sI-fYQ" id="6X7-Wq-5JF"/>
+                        <outlet property="leftButton" destination="Qb3-b7-maP" id="Wcy-YC-WRi"/>
+                        <outlet property="rightButton" destination="sGm-dh-cXh" id="YHi-Vd-QWP"/>
+                        <outlet property="yellowView" destination="7OW-ZU-51f" id="IbD-qb-bmd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wgm-ba-hZ3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-303" y="69"/>
+            <point key="canvasLocation" x="-304.34782608695656" y="68.973214285714278"/>
         </scene>
     </scenes>
 </document>

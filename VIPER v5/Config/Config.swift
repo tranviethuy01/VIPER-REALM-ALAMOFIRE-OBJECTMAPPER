@@ -11,3 +11,11 @@ import UIKit
 class Config: NSObject {
 
 }
+
+enum ServiceType : String {
+
+    case lomart = "lomart"
+    case loship = "loship"
+    case losend = "losend"
+
+}
