@@ -100,6 +100,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Realm Vs Core Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGm-ZQ-Ygm">
+                                        <rect key="frame" x="15" y="349" width="384" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="sIP-yb-CHX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="934-ig-0cg">
                                         <rect key="frame" x="0.0" y="445.5" width="414" height="30"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -115,13 +124,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIa-b3-jta">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIa-b3-jta">
                                         <rect key="frame" x="0.0" y="515" width="414" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <state key="normal" title="ViewLifeCircle"/>
                                         <connections>
                                             <action selector="viewLifeCircleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YGR-hA-meW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfg-qT-0Z4">
+                                        <rect key="frame" x="0.0" y="525" width="414" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="slX-EU-wlb"/>
+                                        </constraints>
+                                        <state key="normal" title="Realm Vs Core Data"/>
+                                        <connections>
+                                            <action selector="realmVsCoreData_Tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1T-PC-CqI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -133,6 +152,7 @@
                                     <constraint firstItem="Qfy-bO-40j" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" id="2mh-0N-Nh3"/>
                                     <constraint firstItem="zgo-eK-aZL" firstAttribute="centerX" secondItem="L8c-nx-Rd1" secondAttribute="centerX" id="3gg-jo-Qca"/>
                                     <constraint firstItem="Qox-oj-QGD" firstAttribute="top" secondItem="d2h-A0-SRZ" secondAttribute="bottom" constant="20" id="6k3-Fq-7x0"/>
+                                    <constraint firstItem="Qfg-qT-0Z4" firstAttribute="top" secondItem="AGm-ZQ-Ygm" secondAttribute="bottom" constant="15" id="6vA-9B-ZJo"/>
                                     <constraint firstItem="BZD-KV-ecc" firstAttribute="trailing" secondItem="L8c-nx-Rd1" secondAttribute="trailing" id="84I-CM-Fcx"/>
                                     <constraint firstItem="V8e-i9-dWJ" firstAttribute="top" secondItem="CBS-J2-q8A" secondAttribute="bottom" constant="10" id="B8R-Qc-ZyY"/>
                                     <constraint firstItem="fdB-Sf-EZA" firstAttribute="top" secondItem="BZD-KV-ecc" secondAttribute="top" id="Eco-ZQ-bks"/>
@@ -141,6 +161,7 @@
                                     <constraint firstItem="Hdc-4Z-yUC" firstAttribute="bottom" secondItem="fdB-Sf-EZA" secondAttribute="bottom" id="HVT-8R-ArR"/>
                                     <constraint firstItem="aAR-Zy-eVG" firstAttribute="leading" secondItem="zgo-eK-aZL" secondAttribute="leading" id="Idd-Lt-IeC"/>
                                     <constraint firstItem="BZD-KV-ecc" firstAttribute="top" secondItem="fdB-Sf-EZA" secondAttribute="top" id="Ieo-pc-9KR"/>
+                                    <constraint firstItem="L8c-nx-Rd1" firstAttribute="trailing" secondItem="AGm-ZQ-Ygm" secondAttribute="trailing" constant="15" id="IhK-Qc-zk2"/>
                                     <constraint firstItem="L8c-nx-Rd1" firstAttribute="trailing" secondItem="M1V-cm-dI4" secondAttribute="trailing" id="Ipq-YW-5Ed"/>
                                     <constraint firstItem="BZD-KV-ecc" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" id="Jhq-eb-Ako"/>
                                     <constraint firstItem="3Pp-zl-DUU" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" id="LCn-rY-CFc"/>
@@ -157,12 +178,16 @@
                                     <constraint firstItem="Qfy-bO-40j" firstAttribute="trailing" secondItem="L8c-nx-Rd1" secondAttribute="trailing" id="Vtg-7O-jXK"/>
                                     <constraint firstItem="8DR-jX-uzr" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" constant="10" id="XuV-WT-kjS"/>
                                     <constraint firstItem="Qfy-bO-40j" firstAttribute="top" secondItem="Qox-oj-QGD" secondAttribute="bottom" constant="10" id="Y2r-Ij-7da"/>
+                                    <constraint firstItem="L8c-nx-Rd1" firstAttribute="trailing" secondItem="Qfg-qT-0Z4" secondAttribute="trailing" id="YB0-vJ-fsC"/>
                                     <constraint firstItem="L8c-nx-Rd1" firstAttribute="trailing" secondItem="8DR-jX-uzr" secondAttribute="trailing" id="Ymw-Nb-KtB"/>
                                     <constraint firstAttribute="trailing" secondItem="zgo-eK-aZL" secondAttribute="trailing" id="Z7S-os-UZq"/>
                                     <constraint firstItem="L8c-nx-Rd1" firstAttribute="trailing" secondItem="CBS-J2-q8A" secondAttribute="trailing" id="cWs-3a-ble"/>
                                     <constraint firstItem="qPN-VF-i65" firstAttribute="top" secondItem="3Pp-zl-DUU" secondAttribute="bottom" constant="20" id="daZ-B9-CfC"/>
                                     <constraint firstItem="934-ig-0cg" firstAttribute="top" secondItem="qPN-VF-i65" secondAttribute="bottom" constant="10" id="ehy-ks-dqA"/>
+                                    <constraint firstItem="AGm-ZQ-Ygm" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" constant="15" id="gXh-UT-t9H"/>
+                                    <constraint firstItem="AGm-ZQ-Ygm" firstAttribute="top" secondItem="JIa-b3-jta" secondAttribute="bottom" constant="15" id="j1d-U7-RAM"/>
                                     <constraint firstItem="d2h-A0-SRZ" firstAttribute="trailing" secondItem="L8c-nx-Rd1" secondAttribute="trailing" id="lMU-sd-Dhk"/>
+                                    <constraint firstItem="Qfg-qT-0Z4" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" id="m32-RZ-Ai9"/>
                                     <constraint firstItem="V8e-i9-dWJ" firstAttribute="trailing" secondItem="L8c-nx-Rd1" secondAttribute="trailing" id="n9C-0P-74h"/>
                                     <constraint firstItem="3Pp-zl-DUU" firstAttribute="trailing" secondItem="L8c-nx-Rd1" secondAttribute="trailing" id="nZn-vk-Ym1"/>
                                     <constraint firstItem="zgo-eK-aZL" firstAttribute="top" secondItem="aAR-Zy-eVG" secondAttribute="bottom" constant="10" id="oXq-r1-fdf"/>

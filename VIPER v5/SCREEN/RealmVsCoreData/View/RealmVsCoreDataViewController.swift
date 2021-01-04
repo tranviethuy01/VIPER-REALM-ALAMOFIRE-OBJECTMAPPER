@@ -104,7 +104,7 @@ class RealmVsCoreDataViewController: ViewController {
     */
     
     override class func storyBoardId() -> String {
-        return "RealmVsCoreDataViewController"
+        return "RealmVsCoreData"
     }
     
     override class func storyBoardName() -> String {

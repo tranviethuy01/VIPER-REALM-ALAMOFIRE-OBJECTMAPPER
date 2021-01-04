@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Promotion Detail View Controller-->
+        <!--Realm Vs Core Data View Controller-->
         <scene sceneID="z3e-ai-zVI">
             <objects>
-                <viewController storyboardIdentifier="RealmVsCoreDataViewController" id="VfL-Uu-7JJ" customClass="RealmVsCoreDataViewController" customModule="Loship" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RealmVsCoreData" id="VfL-Uu-7JJ" customClass="RealmVsCoreDataViewController" customModule="VIPER_v5" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="C3m-Ed-qNp"/>
                         <viewControllerLayoutGuide type="bottom" id="Xi2-49-eSI"/>
@@ -43,7 +44,7 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMT-hY-5hE">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="74"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGx-PT-QsI">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGx-PT-QsI">
                                                 <rect key="frame" x="15" y="15" width="384" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="kjD-zP-eEV"/>
@@ -54,7 +55,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="74" id="P46-ei-rrC"/>
                                             <constraint firstAttribute="trailing" secondItem="GGx-PT-QsI" secondAttribute="trailing" constant="15" id="Pq6-mo-g1c"/>
@@ -63,7 +64,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="wMT-hY-5hE" firstAttribute="leading" secondItem="Q4g-fm-4HB" secondAttribute="leading" id="2jj-CN-WjH"/>
                                     <constraint firstAttribute="trailing" secondItem="wMT-hY-5hE" secondAttribute="trailing" id="9Xy-Iu-5Ur"/>
@@ -96,4 +97,9 @@
             <point key="canvasLocation" x="7" y="84"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

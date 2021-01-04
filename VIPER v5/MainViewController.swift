@@ -90,6 +90,12 @@ class MainViewController: UIViewController {
     }
     
     
+    @IBAction func realmVsCoreData_Tap(_ sender: Any) {
+        
+        pushRealmVsCoreData()
+    }
+    
+    
     /* viết các hàm tiến hành hiển thị view */
     func pushViperDemoScene(){
         //
@@ -156,14 +162,20 @@ class MainViewController: UIViewController {
     }
     
     func pushTestScene(){
-            
-            let storyboard = UIStoryboard(name: "TestScene", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "TestSceneID")
-             //self.present(controller, animated: true, completion:        nil)
-            self.navigationController?.pushViewController(vc, animated: true)
-            
-        }
+        let storyboard = UIStoryboard(name: "TestScene", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "TestSceneID")
+         //self.present(controller, animated: true, completion:        nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
+    func pushRealmVsCoreData(){
+        let storyboard = UIStoryboard(name: "RealmVsCoreData", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "RealmVsCoreData")
+         //self.present(controller, animated: true, completion:        nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
     
     class func initWithStoryBoard() ->ViewController? {
