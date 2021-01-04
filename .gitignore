@@ -1,0 +1,9 @@
+.DS_Store
+Podfile.lock
+Pods/
+build/
+VIPER v5.xcodeproj/xcuserdata
+VIPER v5.xcworkspace
+xcuserdata
+fastlane/report.xml
+fastlane/Preview.html

@@ -10,7 +10,8 @@ target 'VIPER v5' do
   pod 'AlamofireObjectMapper', '~> 5.2.0' # Swift 4.2
   pod 'AlamofireImage', '~> 3.5.2' # Swift 4.2
   pod 'ObjectMapper', '~> 3.4.2' # Swift 4.2
-  pod 'RealmSwift', '~> 3.17.1' # Swift 4.2
+  #pod 'RealmSwift', '~> 3.17.1' # Swift 4.2
+  pod 'RealmSwift', '~> 3.19.0'
   pod 'IQKeyboardManagerSwift', '~> 6.1.1' # Swift 4.2
   pod 'Kingfisher', '~> 4.10.1' # Swift 4.2
   pod 'CocoaMQTT', '~>1.1.3' # Swift 4.2

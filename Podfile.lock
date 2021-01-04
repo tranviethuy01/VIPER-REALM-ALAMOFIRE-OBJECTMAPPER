@@ -98,11 +98,11 @@ PODS:
     - ObjectMapper
     - ObjectMapperAdditions/Core
     - RealmSwift
-  - Realm (3.17.3):
-    - Realm/Headers (= 3.17.3)
-  - Realm/Headers (3.17.3)
-  - RealmSwift (3.17.3):
-    - Realm (= 3.17.3)
+  - Realm (3.19.1):
+    - Realm/Headers (= 3.19.1)
+  - Realm/Headers (3.19.1)
+  - RealmSwift (3.19.1):
+    - Realm (= 3.19.1)
   - Shimmer (1.0.2)
   - SwiftyJSON (5.0.0)
   - TTTAttributedLabel (2.0.0)
@@ -137,7 +137,7 @@ DEPENDENCIES:
   - ObjectMapper (~> 3.4.2)
   - ObjectMapperAdditions/Core (= 5.0.0)
   - ObjectMapperAdditions/Realm (= 5.0.0)
-  - RealmSwift (~> 3.17.1)
+  - RealmSwift (~> 3.19.0)
   - Shimmer (~> 1.0.2)
   - SwiftyJSON (= 5.0.0)
   - TTTAttributedLabel
@@ -196,8 +196,8 @@ SPEC CHECKSUMS:
   AlamofireObjectMapper: 1989f690e982b71921b9253f53a4f33a9bc00d88
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   CocoaMQTT: b506d38ad3bbe1c55a4f8ee8c9fd02c35da1a7d8
-  Crashlytics: 2dfd686bcb918dc10ee0e76f7f853fe42c7bd552
-  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
+  Crashlytics: d3e5090419ddee1003192c98ac0e6dfdb1dba266
+  Fabric: ea977e3cd9c20425516d3dafd3bf8c941c51223f
   FBSDKCoreKit: e7dcac0aabcfb09d0166998edd95fe3b05a0ce5d
   FBSDKLoginKit: dc98b6bf12334f1a42f28d0457fffc9aa3d1eca5
   FBSDKShareKit: 6f9c622f9a5d051f43f2dab6f753d5198422b89c
@@ -218,13 +218,13 @@ SPEC CHECKSUMS:
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
   ObjectMapperAdditions: eca3aa0c950e4c08cf2b8e89d6b6ad6a556ba53d
-  Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
-  RealmSwift: b7fdc2d18616621c31df5c7a398a45a2163f8eb0
+  Realm: fb377747e694c7deb62d402400454134fe321bee
+  RealmSwift: 1302b0ab60f3105a2b214a735eeb0938607cf16b
   Shimmer: c5374be1c2b0c9e292fb05b339a513cf291cac86
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   YandexMobileMetrica: 1030df2959c886a7be3bc3d274eb54c8e86afd6f
 
-PODFILE CHECKSUM: ded368c7030c58a1e3936ba8abc5e198d971c27b
+PODFILE CHECKSUM: 66c4e0b2fdc07f010392be5ce257d9f10dce0faf
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.0
