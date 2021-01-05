@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XKj-iR-0cw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XKj-iR-0cw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VIPER_v5" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="VIPER_v5" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,17 +22,17 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZD-KV-ecc">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIPER Architecture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAR-Zy-eVG">
-                                        <rect key="frame" x="10" y="10" width="157" height="20.5"/>
+                                        <rect key="frame" x="10" y="10" width="156" height="20.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgo-eK-aZL">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgo-eK-aZL">
                                         <rect key="frame" x="10" y="40.5" width="404" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <state key="normal" title="VIPER"/>
                                         <connections>
                                             <action selector="btnDoViperDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cmd-Yu-1gr"/>
@@ -43,9 +44,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2h-A0-SRZ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2h-A0-SRZ">
                                         <rect key="frame" x="0.0" y="121.5" width="414" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <state key="normal" title="REALM"/>
                                         <connections>
                                             <action selector="btnDoRealmDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JWm-c1-uI8"/>
@@ -57,9 +58,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfy-bO-40j">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfy-bO-40j">
                                         <rect key="frame" x="0.0" y="202.5" width="414" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <state key="normal" title="Alamofire"/>
                                         <connections>
                                             <action selector="btnDoAlamofireDemo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yVv-9h-tHq"/>
@@ -71,9 +72,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8e-i9-dWJ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8e-i9-dWJ">
                                         <rect key="frame" x="0.0" y="283.5" width="414" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <state key="normal" title="Object Mapper"/>
                                         <connections>
                                             <action selector="btnDoObjectMapper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P3b-se-kTf"/>
@@ -85,9 +86,9 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pp-zl-DUU">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Pp-zl-DUU">
                                         <rect key="frame" x="0.0" y="364.5" width="414" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <state key="normal" title="Auto Layout"/>
                                         <connections>
                                             <action selector="bbtnDoAutoLayout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hqF-aH-sQG"/>
@@ -99,9 +100,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="934-ig-0cg">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Realm Vs Core Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGm-ZQ-Ygm">
+                                        <rect key="frame" x="15" y="349" width="384" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="sIP-yb-CHX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="934-ig-0cg">
                                         <rect key="frame" x="0.0" y="445.5" width="414" height="30"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <state key="normal" title="MQTT Client"/>
                                         <connections>
                                             <action selector="btnDoMQTTClient:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M8e-rJ-vbq"/>
@@ -114,16 +124,27 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIa-b3-jta">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIa-b3-jta">
                                         <rect key="frame" x="0.0" y="515" width="414" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <state key="normal" title="ViewLifeCircle"/>
                                         <connections>
                                             <action selector="viewLifeCircleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YGR-hA-meW"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qfg-qT-0Z4">
+                                        <rect key="frame" x="0.0" y="525" width="414" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="slX-EU-wlb"/>
+                                        </constraints>
+                                        <state key="normal" title="Realm Vs Core Data"/>
+                                        <connections>
+                                            <action selector="realmVsCoreData_Tap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N1T-PC-CqI"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <viewLayoutGuide key="safeArea" id="L8c-nx-Rd1"/>
                                 <constraints>
                                     <constraint firstItem="Qox-oj-QGD" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" constant="10" id="0dM-7I-pwZ"/>
                                     <constraint firstItem="BZD-KV-ecc" firstAttribute="bottom" secondItem="Hdc-4Z-yUC" secondAttribute="bottom" id="1B5-Nk-Cfy"/>
@@ -131,6 +152,7 @@
                                     <constraint firstItem="Qfy-bO-40j" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" id="2mh-0N-Nh3"/>
                                     <constraint firstItem="zgo-eK-aZL" firstAttribute="centerX" secondItem="L8c-nx-Rd1" secondAttribute="centerX" id="3gg-jo-Qca"/>
                                     <constraint firstItem="Qox-oj-QGD" firstAttribute="top" secondItem="d2h-A0-SRZ" secondAttribute="bottom" constant="20" id="6k3-Fq-7x0"/>
+                                    <constraint firstItem="Qfg-qT-0Z4" firstAttribute="top" secondItem="AGm-ZQ-Ygm" secondAttribute="bottom" constant="15" id="6vA-9B-ZJo"/>
                                     <constraint firstItem="BZD-KV-ecc" firstAttribute="trailing" secondItem="L8c-nx-Rd1" secondAttribute="trailing" id="84I-CM-Fcx"/>
                                     <constraint firstItem="V8e-i9-dWJ" firstAttribute="top" secondItem="CBS-J2-q8A" secondAttribute="bottom" constant="10" id="B8R-Qc-ZyY"/>
                                     <constraint firstItem="fdB-Sf-EZA" firstAttribute="top" secondItem="BZD-KV-ecc" secondAttribute="top" id="Eco-ZQ-bks"/>
@@ -139,6 +161,7 @@
                                     <constraint firstItem="Hdc-4Z-yUC" firstAttribute="bottom" secondItem="fdB-Sf-EZA" secondAttribute="bottom" id="HVT-8R-ArR"/>
                                     <constraint firstItem="aAR-Zy-eVG" firstAttribute="leading" secondItem="zgo-eK-aZL" secondAttribute="leading" id="Idd-Lt-IeC"/>
                                     <constraint firstItem="BZD-KV-ecc" firstAttribute="top" secondItem="fdB-Sf-EZA" secondAttribute="top" id="Ieo-pc-9KR"/>
+                                    <constraint firstItem="L8c-nx-Rd1" firstAttribute="trailing" secondItem="AGm-ZQ-Ygm" secondAttribute="trailing" constant="15" id="IhK-Qc-zk2"/>
                                     <constraint firstItem="L8c-nx-Rd1" firstAttribute="trailing" secondItem="M1V-cm-dI4" secondAttribute="trailing" id="Ipq-YW-5Ed"/>
                                     <constraint firstItem="BZD-KV-ecc" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" id="Jhq-eb-Ako"/>
                                     <constraint firstItem="3Pp-zl-DUU" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" id="LCn-rY-CFc"/>
@@ -155,12 +178,16 @@
                                     <constraint firstItem="Qfy-bO-40j" firstAttribute="trailing" secondItem="L8c-nx-Rd1" secondAttribute="trailing" id="Vtg-7O-jXK"/>
                                     <constraint firstItem="8DR-jX-uzr" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" constant="10" id="XuV-WT-kjS"/>
                                     <constraint firstItem="Qfy-bO-40j" firstAttribute="top" secondItem="Qox-oj-QGD" secondAttribute="bottom" constant="10" id="Y2r-Ij-7da"/>
+                                    <constraint firstItem="L8c-nx-Rd1" firstAttribute="trailing" secondItem="Qfg-qT-0Z4" secondAttribute="trailing" id="YB0-vJ-fsC"/>
                                     <constraint firstItem="L8c-nx-Rd1" firstAttribute="trailing" secondItem="8DR-jX-uzr" secondAttribute="trailing" id="Ymw-Nb-KtB"/>
                                     <constraint firstAttribute="trailing" secondItem="zgo-eK-aZL" secondAttribute="trailing" id="Z7S-os-UZq"/>
                                     <constraint firstItem="L8c-nx-Rd1" firstAttribute="trailing" secondItem="CBS-J2-q8A" secondAttribute="trailing" id="cWs-3a-ble"/>
                                     <constraint firstItem="qPN-VF-i65" firstAttribute="top" secondItem="3Pp-zl-DUU" secondAttribute="bottom" constant="20" id="daZ-B9-CfC"/>
                                     <constraint firstItem="934-ig-0cg" firstAttribute="top" secondItem="qPN-VF-i65" secondAttribute="bottom" constant="10" id="ehy-ks-dqA"/>
+                                    <constraint firstItem="AGm-ZQ-Ygm" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" constant="15" id="gXh-UT-t9H"/>
+                                    <constraint firstItem="AGm-ZQ-Ygm" firstAttribute="top" secondItem="JIa-b3-jta" secondAttribute="bottom" constant="15" id="j1d-U7-RAM"/>
                                     <constraint firstItem="d2h-A0-SRZ" firstAttribute="trailing" secondItem="L8c-nx-Rd1" secondAttribute="trailing" id="lMU-sd-Dhk"/>
+                                    <constraint firstItem="Qfg-qT-0Z4" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" id="m32-RZ-Ai9"/>
                                     <constraint firstItem="V8e-i9-dWJ" firstAttribute="trailing" secondItem="L8c-nx-Rd1" secondAttribute="trailing" id="n9C-0P-74h"/>
                                     <constraint firstItem="3Pp-zl-DUU" firstAttribute="trailing" secondItem="L8c-nx-Rd1" secondAttribute="trailing" id="nZn-vk-Ym1"/>
                                     <constraint firstItem="zgo-eK-aZL" firstAttribute="top" secondItem="aAR-Zy-eVG" secondAttribute="bottom" constant="10" id="oXq-r1-fdf"/>
@@ -171,11 +198,11 @@
                                     <constraint firstItem="V8e-i9-dWJ" firstAttribute="leading" secondItem="L8c-nx-Rd1" secondAttribute="leading" id="xde-lR-iNe"/>
                                     <constraint firstItem="aAR-Zy-eVG" firstAttribute="leading" secondItem="RWr-6v-U7U" secondAttribute="leading" constant="10" id="xlA-wU-8f6"/>
                                 </constraints>
-                                <viewLayoutGuide key="safeArea" id="L8c-nx-Rd1"/>
                                 <viewLayoutGuide key="contentLayoutGuide" id="fdB-Sf-EZA"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Hdc-4Z-yUC"/>
                             </scrollView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="RWr-6v-U7U" secondAttribute="bottom" id="2aC-id-YDM"/>
@@ -183,7 +210,6 @@
                             <constraint firstItem="RWr-6v-U7U" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gJD-Uh-NP3"/>
                             <constraint firstAttribute="trailing" secondItem="RWr-6v-U7U" secondAttribute="trailing" id="nge-FJ-Dtc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="y23-gF-OQg"/>
                     <connections>
@@ -219,4 +245,12 @@
             <point key="canvasLocation" x="-243.47826086956525" y="99.776785714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

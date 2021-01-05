@@ -13,4 +13,6 @@ import UIKit
 struct Constant {
     //key
     static let kData : String = "data"
+    static let kLanguage: String = "language"
+    static let kReadyForOrderStatus = "readyForOrderStatus"
 }

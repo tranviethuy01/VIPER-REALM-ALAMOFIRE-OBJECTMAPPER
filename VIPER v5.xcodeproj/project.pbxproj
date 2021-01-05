@@ -95,10 +95,23 @@
 		0DFC28D52429E60D00A92EA9 /* DishListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC28D42429E60D00A92EA9 /* DishListLocalDataManager.swift */; };
 		0DFC28D72429E62000A92EA9 /* DishListLocalDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFC28D62429E62000A92EA9 /* DishListLocalDataManagerProtocol.swift */; };
 		134ADFC87F881AC78747F621 /* Pods_VIPER_v5_VIPER_v5UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0D64D24BFE5275C0DF4FDF /* Pods_VIPER_v5_VIPER_v5UITests.framework */; };
+		2821D87E25A3070900078A1D /* RealmVsCoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D87B25A3070800078A1D /* RealmVsCoreDataViewController.swift */; };
+		2821D87F25A3070900078A1D /* RealmVsCoreDataViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D87C25A3070800078A1D /* RealmVsCoreDataViewProtocol.swift */; };
+		2821D88025A3070900078A1D /* RealmVsCoreData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2821D87D25A3070900078A1D /* RealmVsCoreData.storyboard */; };
+		2821D88625A3075500078A1D /* RealmVsCoreDataPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D88425A3075400078A1D /* RealmVsCoreDataPresenterProtocol.swift */; };
+		2821D88725A3075500078A1D /* RealmVsCoreDataPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D88525A3075500078A1D /* RealmVsCoreDataPresenter.swift */; };
+		2821D88D25A3076A00078A1D /* RealmVsCoreDataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D88B25A3076A00078A1D /* RealmVsCoreDataInteractor.swift */; };
+		2821D88E25A3076A00078A1D /* RealmVsCoreDataInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D88C25A3076A00078A1D /* RealmVsCoreDataInteractorProtocol.swift */; };
+		2821D89425A3078100078A1D /* RealmVsCoreDataLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D89225A3078000078A1D /* RealmVsCoreDataLocalDataManager.swift */; };
+		2821D89525A3078100078A1D /* RealmVsCoreDataLocalDataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D89325A3078100078A1D /* RealmVsCoreDataLocalDataManagerProtocol.swift */; };
+		2821D89B25A3079200078A1D /* RealmVsCoreDataWireFrameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D89925A3079200078A1D /* RealmVsCoreDataWireFrameProtocol.swift */; };
+		2821D89C25A3079200078A1D /* RealmVsCoreDataWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D89A25A3079200078A1D /* RealmVsCoreDataWireFrame.swift */; };
+		2821D8A225A312ED00078A1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D8A125A312ED00078A1D /* ViewController.swift */; };
+		2821D8AA25A3146100078A1D /* ViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2821D8A925A3146100078A1D /* ViewService.swift */; };
 		2BBAFA1FF9FBA84D772BF67D /* Pods_VIPER_v5.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01E4034D4E49CE724361A805 /* Pods_VIPER_v5.framework */; };
 		6A362F47AD32457D477ED55C /* Pods_VIPER_v5Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1D6A72372DAB45456B64F7A /* Pods_VIPER_v5Tests.framework */; };
 		841E9D39241C74A800225EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D38241C74A800225EBC /* AppDelegate.swift */; };
-		841E9D3B241C74A800225EBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D3A241C74A800225EBC /* ViewController.swift */; };
+		841E9D3B241C74A800225EBC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D3A241C74A800225EBC /* MainViewController.swift */; };
 		841E9D3E241C74A800225EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841E9D3C241C74A800225EBC /* Main.storyboard */; };
 		841E9D41241C74A800225EBC /* VIPER_v5.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 841E9D3F241C74A800225EBC /* VIPER_v5.xcdatamodeld */; };
 		841E9D43241C74AB00225EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841E9D42241C74AB00225EBC /* Assets.xcassets */; };
@@ -228,11 +241,24 @@
 		0DFC28D42429E60D00A92EA9 /* DishListLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListLocalDataManager.swift; sourceTree = "<group>"; };
 		0DFC28D62429E62000A92EA9 /* DishListLocalDataManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListLocalDataManagerProtocol.swift; sourceTree = "<group>"; };
 		1E0D64D24BFE5275C0DF4FDF /* Pods_VIPER_v5_VIPER_v5UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_v5_VIPER_v5UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2821D87B25A3070800078A1D /* RealmVsCoreDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVsCoreDataViewController.swift; sourceTree = "<group>"; };
+		2821D87C25A3070800078A1D /* RealmVsCoreDataViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVsCoreDataViewProtocol.swift; sourceTree = "<group>"; };
+		2821D87D25A3070900078A1D /* RealmVsCoreData.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RealmVsCoreData.storyboard; sourceTree = "<group>"; };
+		2821D88425A3075400078A1D /* RealmVsCoreDataPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVsCoreDataPresenterProtocol.swift; sourceTree = "<group>"; };
+		2821D88525A3075500078A1D /* RealmVsCoreDataPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVsCoreDataPresenter.swift; sourceTree = "<group>"; };
+		2821D88B25A3076A00078A1D /* RealmVsCoreDataInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVsCoreDataInteractor.swift; sourceTree = "<group>"; };
+		2821D88C25A3076A00078A1D /* RealmVsCoreDataInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVsCoreDataInteractorProtocol.swift; sourceTree = "<group>"; };
+		2821D89225A3078000078A1D /* RealmVsCoreDataLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVsCoreDataLocalDataManager.swift; sourceTree = "<group>"; };
+		2821D89325A3078100078A1D /* RealmVsCoreDataLocalDataManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVsCoreDataLocalDataManagerProtocol.swift; sourceTree = "<group>"; };
+		2821D89925A3079200078A1D /* RealmVsCoreDataWireFrameProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVsCoreDataWireFrameProtocol.swift; sourceTree = "<group>"; };
+		2821D89A25A3079200078A1D /* RealmVsCoreDataWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmVsCoreDataWireFrame.swift; sourceTree = "<group>"; };
+		2821D8A125A312ED00078A1D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2821D8A925A3146100078A1D /* ViewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewService.swift; sourceTree = "<group>"; };
 		324C92AE61B8656D95A6E663 /* Pods-VIPER v5Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER v5Tests.debug.xcconfig"; path = "Target Support Files/Pods-VIPER v5Tests/Pods-VIPER v5Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E7C21EF1B36F4D44026CE7C /* Pods-VIPER v5Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER v5Tests.release.xcconfig"; path = "Target Support Files/Pods-VIPER v5Tests/Pods-VIPER v5Tests.release.xcconfig"; sourceTree = "<group>"; };
 		841E9D35241C74A800225EBC /* VIPER v5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER v5.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		841E9D38241C74A800225EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		841E9D3A241C74A800225EBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		841E9D3A241C74A800225EBC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		841E9D3D241C74A800225EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		841E9D40241C74A800225EBC /* VIPER_v5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VIPER_v5.xcdatamodel; sourceTree = "<group>"; };
 		841E9D42241C74AB00225EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -410,6 +436,7 @@
 		0D48F0112424787600BE30B5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2821D8A925A3146100078A1D /* ViewService.swift */,
 				0DC8FD7C2433497500AA819C /* Alert */,
 				0D48F0122424787B00BE30B5 /* Network */,
 				0DCC4CA6242DA6150051008B /* Utils.swift */,
@@ -1101,6 +1128,94 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2821D87325A3031800078A1D /* SCREEN */ = {
+			isa = PBXGroup;
+			children = (
+				2821D87425A3032100078A1D /* RealmVsCoreData */,
+			);
+			path = SCREEN;
+			sourceTree = "<group>";
+		};
+		2821D87425A3032100078A1D /* RealmVsCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				2821D87A25A306EA00078A1D /* WireFrame */,
+				2821D87825A306D700078A1D /* DataManager */,
+				2821D87725A306D100078A1D /* Interactor */,
+				2821D87625A306C000078A1D /* Presenter */,
+				2821D87525A306B900078A1D /* View */,
+			);
+			path = RealmVsCoreData;
+			sourceTree = "<group>";
+		};
+		2821D87525A306B900078A1D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2821D87D25A3070900078A1D /* RealmVsCoreData.storyboard */,
+				2821D87B25A3070800078A1D /* RealmVsCoreDataViewController.swift */,
+				2821D87C25A3070800078A1D /* RealmVsCoreDataViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2821D87625A306C000078A1D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2821D88525A3075500078A1D /* RealmVsCoreDataPresenter.swift */,
+				2821D88425A3075400078A1D /* RealmVsCoreDataPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2821D87725A306D100078A1D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2821D88B25A3076A00078A1D /* RealmVsCoreDataInteractor.swift */,
+				2821D88C25A3076A00078A1D /* RealmVsCoreDataInteractorProtocol.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2821D87825A306D700078A1D /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				2821D87925A306E600078A1D /* Local */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		2821D87925A306E600078A1D /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				2821D89225A3078000078A1D /* RealmVsCoreDataLocalDataManager.swift */,
+				2821D89325A3078100078A1D /* RealmVsCoreDataLocalDataManagerProtocol.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		2821D87A25A306EA00078A1D /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				2821D89A25A3079200078A1D /* RealmVsCoreDataWireFrame.swift */,
+				2821D89925A3079200078A1D /* RealmVsCoreDataWireFrameProtocol.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		2821D8A025A312CA00078A1D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2821D8AE25A3162C00078A1D /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group1";
+			sourceTree = "<group>";
+		};
 		841E9D2C241C74A800225EBC = {
 			isa = PBXGroup;
 			children = (
@@ -1126,6 +1241,9 @@
 		841E9D37241C74A800225EBC /* VIPER v5 */ = {
 			isa = PBXGroup;
 			children = (
+				2821D8AE25A3162C00078A1D /* New Group1 */,
+				2821D8A025A312CA00078A1D /* New Group */,
+				2821D87325A3031800078A1D /* SCREEN */,
 				0DE543CE243ED44C00031DEC /* testscene */,
 				0D44D12E243DB37C008BEAAC /* ViewLifeCircle */,
 				0DDF03532428794D0054BEDF /* Config */,
@@ -1144,7 +1262,7 @@
 				841E9D6A241C7D7D00225EBC /* REALM */,
 				841E9D69241C7D6900225EBC /* VIPER */,
 				841E9D38241C74A800225EBC /* AppDelegate.swift */,
-				841E9D3A241C74A800225EBC /* ViewController.swift */,
+				841E9D3A241C74A800225EBC /* MainViewController.swift */,
 				841E9D3C241C74A800225EBC /* Main.storyboard */,
 				841E9D42241C74AB00225EBC /* Assets.xcassets */,
 				841E9D44241C74AB00225EBC /* LaunchScreen.storyboard */,
@@ -1514,6 +1632,7 @@
 		84E8DFC6241CB78D0038DA99 /* StandardClass */ = {
 			isa = PBXGroup;
 			children = (
+				2821D8A125A312ED00078A1D /* ViewController.swift */,
 				84E8DFC7241CB8100038DA99 /* StandardViewController.swift */,
 			);
 			path = StandardClass;
@@ -1644,6 +1763,7 @@
 				84C5FFDE2420A5CF00DDEB8A /* RealmDishListStoryboard.storyboard in Resources */,
 				0DD879B82421CB5F0063925B /* AlamofireDishListStoryboard.storyboard in Resources */,
 				0DE543D3243ED44C00031DEC /* TestScene.storyboard in Resources */,
+				2821D88025A3070900078A1D /* RealmVsCoreData.storyboard in Resources */,
 				0DCC4CAB242DED3D0051008B /* Codable2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1806,8 +1926,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2821D88625A3075500078A1D /* RealmVsCoreDataPresenterProtocol.swift in Sources */,
 				0D457DAC242468D200762A0E /* RealmDishDetailConfig.swift in Sources */,
 				841E9D86241C828F00225EBC /* DishListPresenterProtocol.swift in Sources */,
+				2821D89525A3078100078A1D /* RealmVsCoreDataLocalDataManagerProtocol.swift in Sources */,
 				0D9D2D522423B6DA00DF7F4E /* AutoLayoutDishListConfig.swift in Sources */,
 				0DCD9D982423212F0053893A /* DishDetailInteractorProtocol.swift in Sources */,
 				0DEE25F024275A040065939B /* String.swift in Sources */,
@@ -1817,6 +1939,7 @@
 				841E9D78241C7FBE00225EBC /* DishListWireFrame.swift in Sources */,
 				0D457DBC24246FC900762A0E /* AlamofireDishListInteractorProtocol.swift in Sources */,
 				0DDF0357242879C30054BEDF /* Config.swift in Sources */,
+				2821D8AA25A3146100078A1D /* ViewService.swift in Sources */,
 				0D4C11F024232B5900595FD6 /* ViperDishDetailConfig.swift in Sources */,
 				0DEE25F424279D610065939B /* ObjectMapperDish.swift in Sources */,
 				0D9D2D442423ADB100DF7F4E /* RealmDishListPresenter.swift in Sources */,
@@ -1844,7 +1967,7 @@
 				841E9D7C241C801400225EBC /* DishCell.swift in Sources */,
 				84E8DFC8241CB8100038DA99 /* StandardViewController.swift in Sources */,
 				0DD879C42421CED50063925B /* ObjectMapperDishListViewController.swift in Sources */,
-				841E9D3B241C74A800225EBC /* ViewController.swift in Sources */,
+				841E9D3B241C74A800225EBC /* MainViewController.swift in Sources */,
 				0DDF035024285F380054BEDF /* ObjectMapperDish2.swift in Sources */,
 				0DCD9D9C242321500053893A /* DishDetailWireFrameProtocol.swift in Sources */,
 				0DCD9D92242320F60053893A /* DishDetailPresenter.swift in Sources */,
@@ -1855,23 +1978,29 @@
 				0DC8FD81243349E200AA819C /* ConfirmAndCancelViewController.swift in Sources */,
 				0D457DBE24246FDF00762A0E /* AlamofireDishListWireFrame.swift in Sources */,
 				0D27CEB72424A79E003B1129 /* RealmDishListLocalDataManager.swift in Sources */,
+				2821D88D25A3076A00078A1D /* RealmVsCoreDataInteractor.swift in Sources */,
 				0D9D2D4C2423ADF400DF7F4E /* RealmDishListWireFrame.swift in Sources */,
 				0D457DA72424689A00762A0E /* RealmDishDetailWireFrame.swift in Sources */,
 				0DCD9D962423211D0053893A /* DishDetailInteractor.swift in Sources */,
 				0D457D9B2424683100762A0E /* RealmDishDetailViewController.swift in Sources */,
+				2821D89C25A3079200078A1D /* RealmVsCoreDataWireFrame.swift in Sources */,
 				0DCC4CA9242DECF50051008B /* CodableView.swift in Sources */,
 				841E9D7E241C808A00225EBC /* Dish.swift in Sources */,
 				0DCD9D94242321030053893A /* DishDetailPresenterProtocol.swift in Sources */,
+				2821D8A225A312ED00078A1D /* ViewController.swift in Sources */,
 				0D457DC22424700400762A0E /* AlamofireDishListRemoteDataManager.swift in Sources */,
 				841E9D84241C827C00225EBC /* DishListPresenter.swift in Sources */,
 				0D457DC62424702400762A0E /* AlamofireDishListLocalDataManager.swift in Sources */,
 				0D27CEB92424A7EE003B1129 /* RealmDishListRemoteDataManagerProtocol.swift in Sources */,
 				841E9D76241C7F8700225EBC /* DishListViewControllerProtocol.swift in Sources */,
+				2821D87F25A3070900078A1D /* RealmVsCoreDataViewProtocol.swift in Sources */,
+				2821D88725A3075500078A1D /* RealmVsCoreDataPresenter.swift in Sources */,
 				0DCD9D9A242321430053893A /* DishDetailWireFrame.swift in Sources */,
 				0DD879B42421BE5A0063925B /* RealmDishListViewController.swift in Sources */,
 				0DD42A562432E1ED006DCAC0 /* UIViewController.swift in Sources */,
 				0DEE25F224276E4E0065939B /* BaseObject.swift in Sources */,
 				0D9D2D3E2423AD2300DF7F4E /* RealmDishListConfig.swift in Sources */,
+				2821D88E25A3076A00078A1D /* RealmVsCoreDataInteractorProtocol.swift in Sources */,
 				0D457DB42424691300762A0E /* RealmDishDetailLocalDataManager.swift in Sources */,
 				0DCD9D8E24231FC30053893A /* DishDetailViewControllerProtocol.swift in Sources */,
 				0DEE25EC24274FC60065939B /* ObjectMapperDishListRemoteDataManagerProtocol.swift in Sources */,
@@ -1880,14 +2009,17 @@
 				0D9D2D482423ADD100DF7F4E /* RealmDishListInteractor.swift in Sources */,
 				0DFC28D72429E62000A92EA9 /* DishListLocalDataManagerProtocol.swift in Sources */,
 				841E9D80241C81ED00225EBC /* DishListInteractor.swift in Sources */,
+				2821D87E25A3070900078A1D /* RealmVsCoreDataViewController.swift in Sources */,
 				0D457D9F2424685000762A0E /* RealmDishDetailPresenterProtocol.swift in Sources */,
 				0D9D2D4E2423AE0200DF7F4E /* RealmDishListWireFrameProtocol.swift in Sources */,
 				841E9D74241C7F7100225EBC /* DishListViewController.swift in Sources */,
 				0D9D2D542423B75F00DF7F4E /* ObjectMapperDishListConfig.swift in Sources */,
 				0DCD9D8C24231FB10053893A /* DishDetailViewController.swift in Sources */,
+				2821D89425A3078100078A1D /* RealmVsCoreDataLocalDataManager.swift in Sources */,
 				0DD879D22421DE2B0063925B /* AutoLayoutDishListViewController.swift in Sources */,
 				0D457DA52424688300762A0E /* RealmDishDetailInteractorProtocol.swift in Sources */,
 				0D457DBA24246FBE00762A0E /* AlamofireDishListInteractor.swift in Sources */,
+				2821D89B25A3079200078A1D /* RealmVsCoreDataWireFrameProtocol.swift in Sources */,
 				0D457DC42424701300762A0E /* AlamofireDishListRemoteDataManagerProtocol.swift in Sources */,
 				841E9D39241C74A800225EBC /* AppDelegate.swift in Sources */,
 				0D9D2D422423AD9700DF7F4E /* RealmDishListCell.swift in Sources */,
