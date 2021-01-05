@@ -11,7 +11,5 @@ import Foundation
 
 protocol RealmVsCoreDataViewProtocol: class {
     var presenter: RealmVsCoreDataPresenterProtocol? {get set}
-//    func startReloading()
-//    func endReloading()
     func updateView()
 }

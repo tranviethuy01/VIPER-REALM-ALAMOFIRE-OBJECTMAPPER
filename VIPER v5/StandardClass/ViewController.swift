@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  LoshipMerchant
+//  VIPER
 //
 //  Created by admin on 3/14/20.
 //  Copyright © 2020 com.gizku.viper5. All rights reserved.

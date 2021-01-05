@@ -10,22 +10,23 @@ import Foundation
 import RealmSwift
 
 class RealmVsCoreDataLocalDataManager: RealmVsCoreDataLocalDataManagerProtocol {
-//    func initPromotion(_ code: String) -> Promotion? {
-//        let realm = try! Realm()
-//        return realm.objects(Promotion.self).filter("code = %@", code).first
-//    }
-//
-//    func initCampaign(_ id: Int) -> Campaign? {
-//        let realm = try! Realm()
-//        return realm.object(ofType: Campaign.self, forPrimaryKey: id)
-//    }
+    func readCoreData() {
+        //TODO
+        //        let realm = try! Realm()
+        //        return realm.objects(Promotion.self).filter("code = %@", code).first
+    }
     
-    func saveCoreData() {
+    func writeCoreData() {
+        //TODO
+        //        let realm = try! Realm()
+        //        return realm.objects(Promotion.self).filter("code = %@", code).first
+    }
+    
+    func readRealmData() {
         //TODO
     }
     
-    func saveRealmData() {
+    func writeRealmData() {
         //TODO
     }
-    
 }

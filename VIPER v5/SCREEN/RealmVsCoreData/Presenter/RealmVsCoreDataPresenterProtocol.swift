@@ -17,12 +17,9 @@ protocol RealmVsCoreDataPresenterProtocol: class {
     var wireFrame: RealmVsCoreDataWireFrameProtocol? {get set}
     var code: String! {get set}
     var state: RealmVsCoreDataState! {get set}
-//    var campaignId: Int! { get set}
-//    var promotion: Promotion? {get set}
-//    var campaign: Campaign? {get set}
-//    var builder: RequestOrderBuilder? {get set}
-//    var losendBuilder: LosendOrderBuilder? {get set}
     func viewDidLoad()
-//    func reloadData()
-//    func usePromotion()
+    func readRealmData()
+    func writeRealmData()
+    func readCoreData()
+    func writeCoreData()
 }

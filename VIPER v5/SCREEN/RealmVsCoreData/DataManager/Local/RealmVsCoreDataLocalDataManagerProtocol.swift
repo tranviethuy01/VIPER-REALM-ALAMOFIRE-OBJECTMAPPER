@@ -9,7 +9,9 @@
 import Foundation
 
 protocol RealmVsCoreDataLocalDataManagerProtocol: class {
-    func saveRealmData()
-    func saveCoreData()
+    func readRealmData()
+    func writeRealmData()
+    func readCoreData()
+    func writeCoreData()
     
 }
